@@ -1,0 +1,12 @@
+.cnx-last-update-container-cluc {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.cnx-last-update-container-cluc span{
+    color: rgba(240, 255, 255, 0.76);
+    font-size: small;
+}

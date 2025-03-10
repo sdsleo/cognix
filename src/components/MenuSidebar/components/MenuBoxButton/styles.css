@@ -1,0 +1,35 @@
+.cnx-menu-box-button-cmbb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    min-height: 50px;
+    margin-right: 50px;
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid transparent;
+    cursor: pointer;
+    color: var(--cnx-primary-menu-text);
+    padding: 0px 15px 0px 13px;
+    transition: 0.2s;
+}
+
+.cnx-menu-box-button-cmbb:hover {
+    background-color: rgba(88, 89, 91, 0.3);
+    transition: 0.1s;
+    color: var(--cnx-primary-orange);
+    border-left: 2px solid var(--cnx-primary-orange);
+}
+
+.cnx-menu-box-title-cmbt {
+    color: var(--cnx-primary-menu-text);
+    text-align: start !important;
+}
+
+@media (max-width: 500px) {
+    .cnx-menu-box-button-cmbb {
+        width: 100%;
+        min-height: 50px;
+    }
+}

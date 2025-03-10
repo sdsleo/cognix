@@ -1,0 +1,101 @@
+.cnx-default-input-container-cdic {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cnx-default-input-cdi {
+  width: 200px;
+  height: 33px;
+  background-color: var(--cnx-input-background);
+  color: var(--cnx-primary-text);
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cnx-default-input-cdi:disabled {
+  background-color: var(--cnx-semi-transparent-button-hover) !important;
+}
+
+.cnx-default-input-cdi::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  filter: invert(0.6);
+}
+
+.cnx-default-input-double-width-cdidw {
+  width: 408px;
+  height: 33px;
+  background-color: var(--cnx-input-background);
+  color: var(--cnx-primary-text);
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cnx-default-input-double-width-cdidw::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  filter: invert(0.6);
+}
+
+.cnx-default-input-password-container-cdipc {
+  width: 200px;
+  height: 33px;
+  background-color: var(--cnx-input-background);
+  color: var(--cnx-primary-text);
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cnx-default-input-password-container-cdipc button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--cnx-input-icon);
+}
+
+.cnx-default-input-password-cdip {
+  width: 150px;
+  background-color: var(--cnx-input-background);
+  color: var(--cnx-primary-text);
+  height: 100%;
+  border: none;
+}
+
+.cnx-default-input-text-area-cdita {
+  display: flex;
+  flex: 1;
+  min-height: 99px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cnx-input-background);
+  color: var(--cnx-primary-text);
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.cnx-default-input-label-cdil {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  width: min-content;
+  height: min-content !important;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--cnx-secondary-text);
+}

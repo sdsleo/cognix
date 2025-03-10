@@ -1,0 +1,842 @@
+.cnx-logistic-control-view-container-clcvc {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-top: 8px;
+  position: relative;
+}
+
+.cnx-logistic-control-view-header-window-button-clmhwb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  border: solid 1px var(--cnx-input-border) !important;
+  border-radius: 3px;
+  cursor: pointer;
+  
+  background-color: var(--cnx-semi-transparent-button);
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-logistic-control-view-header-window-button-clmhwb:hover {
+
+  background-color: var(--cnx-semi-transparent-button-hover);
+  color: var(--cnx-primary-text);
+}
+
+.cnx-logistic-control-loading-view-clclv {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.253);
+  align-items: center;
+  justify-content: center;
+  z-index: 19;
+}
+
+.cnx-logistic-control-loading-view-clclv h1 {
+  color: #ffffff;
+}
+
+.cnx-logistic-control-loaded-container-max-window-clclcmw {
+  position: absolute;
+  border-radius: 9px;
+  width: 99%;
+  height: 98%;
+  background-color: var(--cnx-background-card-400);
+  z-index: 6;
+  margin: 0 auto;
+  left: 0.5%;
+  padding: 0px 6px 0px 6px;
+}
+
+.cnx-logistic-control-header-title-clcht {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cnx-logistic-control-header-title-clcht span {
+  color: var(--cnx-primary-text);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cnx-logistic-control-header-actions-clcha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 0px 20px 0px 20px;
+}
+
+.cnx-logistic-control-select-view-button-container-clcsvbc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnx-logistic-control-view-button-clcsvb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  border-radius: 3px 3px 0px 0px;
+  cursor: pointer;
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-logistic-control-view-button-clcsvb:hover {
+  background-color: var(--cnx-nth-child-table-color);
+}
+
+.cnx-bottom-highlight-selector-cbhs {
+  border-bottom: 3px solid var(--cnx-primary-orange);
+}
+
+.cnx-logistic-control-summary-container-clcsc {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: solid 1px var(--cnx-input-border);
+  height: 35px;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cnx-logistic-control-summary-green-color-clcsgc {
+  color: #a9d18e;
+  font-weight: 400;
+}
+
+.cnx-logistic-control-summary-grey-color-clcsgc {
+  color: #c7c7c7;
+  font-weight: 400;
+}
+
+.cnx-logistic-control-summary-yellow-color-clcsyc {
+  color: #ffe285;
+  font-weight: 400;
+}
+
+.cnx-logistic-control-summary-red-color-clcsrc {
+  color: #f48484;
+  font-weight: 400;
+}
+
+.cnx-logistic-control-action-buttons-container-clcabc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.cnx-logistic-control-action-button-clcab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  padding: 0px 12px 0px 12px;
+  border: solid 1px var(--cnx-input-border) !important;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: var(--cnx-semi-transparent-button);
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-logistic-control-action-button-clcab:hover {
+  background-color: var(--cnx-semi-transparent-button-hover);
+  color: var(--cnx-primary-text);
+}
+
+.cnx-logistic-control-async-button-clcab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  width: 33px;
+  border: solid 1px var(--cnx-input-border) !important;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: var(--cnx-semi-transparent-button);
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-logistic-control-async-button-clcab:hover {
+  background-color: var(--cnx-semi-transparent-button-hover);
+  color: var(--cnx-primary-text);
+}
+
+
+.cnx-logistic-control-card-client-container-clcccc {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 88%;
+    padding: 10px 20px 10px 20px;
+}
+
+.cnx-logistic-control-card-chevron-right-clcccr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  color: var(--cnx-hint-text);
+  background-color: transparent;
+  border: none;
+}
+
+.cnx-logistic-control-card-chevron-left-clcccl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  color: var(--cnx-hint-text);
+  background-color: transparent;
+  border: none;
+}
+
+.cnx-logistic-control-card-chevron-right-clcccr:hover {
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-logistic-control-card-chevron-left-clcccl:hover {
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-icon {
+  font-size: 25px;
+}
+
+.cnx-logistic-control-card-client-clccc {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cnx-background-card-100);
+    border-radius: 9px;
+    position: relative;
+}
+
+.cnx-logistic-control-card-client-clccc h1 {
+    font-size: 1.2rem;
+    color: var(--cnx-primary-text);
+    font-weight: 300;
+}
+
+.cnx-logistic-control-card-title-clcct h1 {
+  font-size: 1.2rem;
+  color: var(--cnx-primary-text);
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.cnx-logistic-control-card-title-clcct {
+  height: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cnx-logistic-control-header-actions-container-clchac {
+  position: relative;
+  z-index: 3;
+}
+.cnx-logistic-control-header-actions-container-clchac button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--cnx-primary-text);
+  border: none;
+}
+
+.cnx-logistic-control-tramos-container-clctc {
+  display: flex;
+  width: 100%;
+  height: 26%;
+  gap: 5px;
+  overflow-x: auto;
+  overflow-y: hidden !important;
+  padding-bottom: 3px;
+}
+
+.cnx-logistic-control-tramo-ul-clctu {
+  display: flex;
+  gap: 6px;
+}
+
+.cnx-logistic-control-tramo-li-clctl {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 14vh;
+  background-color: var(--cnx-background-card-400);
+  border-radius: 6px;
+}
+
+.cnx-logistic-control-tramo-li-clctl:hover {
+  background-color: var(--cnx-background-card-300);
+  cursor: pointer;
+}
+
+.cnx-logistic-control-tramo-number-item-clctni {
+  height: 22%;
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnx-logistic-control-tramo-number-item-clctni span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cnx-logistic-control-tramo-bg-color-grey-clctbcy {
+  background-color: #c7c7c7;
+}
+
+.cnx-logistic-control-tramo-bg-color-red-clctbcr {
+  background-color: #f48484;
+}
+
+.cnx-logistic-control-tramo-bg-color-green-clctbcg {
+  background-color: #a9d18e;
+}
+
+.cnx-logistic-control-tramo-bg-color-yellow-clctbcy {
+  background-color: #ffe285;
+}
+
+.cnx-logistic-control-tramo-info-container-clctic {
+  display: flex;
+  width: 100%;
+  height: 78%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cnx-logistic-control-tramo-info-clcti {
+  font-size: 0.92rem;
+  color: var(--cnx-primary-text);
+}
+
+
+
+.cnx-logistic-control-status-card-container2-clcscc {
+  background-color: var(--cnx-background-card-300);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  height: 95%;
+  padding: 6px;
+  border-radius: 6px;
+  position: relative;
+}
+
+/* TABLE */
+
+.cnx-logistic-control-table-container-clctc {
+  overflow: hidden;
+  display: flex;
+
+  overflow-y: auto;
+}
+.cnx-logistic-control-table-clct {
+  border-collapse: collapse !important;
+  width: 100%;
+  height: 100%;
+}
+
+.cnx-logistic-control-table-max-window-clctmw {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-y: auto !important;
+}
+
+/* .cnx-logistic-control-tr-clct:nth-child(even) {
+  background-color: var(--cnx-nth-child-table-color);
+  cursor: pointer;
+} */
+
+.cnx-horse-list-container span {
+  color: var(--cnx-secondary-text);
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.cnx-horse-list-container ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.cnx-nth-bg {
+  display: flex;
+  align-items: center;
+  color: var(--cnx-secondary-text);
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.cnx-nth-bg:nth-child(even) {
+  background-color: var(--cnx-nth-child-table-color);
+}
+
+.cnx-logistic-control-tr-max-window-clctmw {
+  background-color: var(--cnx-background-card-200);
+  cursor: pointer;
+  height: 50px !important;
+}
+
+.cnx-logistic-control-tr-td-max-window-clcttmw {
+  background-color: var(--cnx-background-card-200);
+  cursor: pointer;
+}
+
+/* .cnx-logistic-control-tr-clct td, th {
+  background-color: transparent;
+  background-clip: padding-box;
+  border-bottom: 3px solid var(--cnx-background-card-400) !important;
+  height: 32px !important;
+  color: #fff;
+  font-size: 0.92rem;
+  padding-left: 5px;
+  padding-right: 5px;
+} */
+
+.cnx-logistic-control-tr-th-clctt {
+  background-color: transparent;
+  background-clip: padding-box;
+  border-bottom: 3px solid var(--cnx-background-card-400) !important;
+  height: 32px !important;
+  background-color: var(--cnx-background-card-200);
+  color: #66a8cf;
+  text-align: left;
+  font-size: 0.92rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.cnx-logistic-control-tr-th-max-window-clcttmw {
+  background-color: transparent;
+  background-clip: padding-box;
+  border-bottom: 3px solid var(--cnx-background-card-400) !important;
+  height: 32px !important;
+  background-color: var(--cnx-background-card-200);
+  color: #66a8cf;
+  text-align: left;
+  font-size: 0.92rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-weight: 400;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.cnx-logistic-control-tr-td-clctt {
+  background-color: transparent;
+  background-clip: padding-box;
+  border-bottom: 3px solid var(--cnx-background-card-400) !important;
+  height: 32px !important;
+  color: #fff;
+  font-size: 0.92rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.cnx-logistic-control-tr-td-max-window-clcttmw {
+  background-color: transparent;
+  background-clip: padding-box;
+  border-bottom: 3px solid var(--cnx-background-card-400) !important;
+  /* background-color: var(--cnx-background-card-200); */
+  color: #fff;
+  height: 50px;
+  font-size: 1rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.cnx-plate-min-screen {
+  font-size: 0.92rem;
+}
+
+.cnx-logistic-control-th2-clct {
+  text-align: left !important;
+  height: 32px !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  color: #66a8cf;
+  font-weight: 400;
+  background-color: var(--cnx-background-card-200);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.cnx-logistic-control-loaded-container2-clclc {
+  background-color: var(--cnx-background-card-400);
+  display: flex;
+  padding-left: 6px;
+  padding-right: 6px;
+  gap: 3px;
+  flex-direction: column;
+  width: 100%;
+  height: 25%;
+  border-radius: 3px;
+  padding-bottom: 3px;
+}
+
+.cnx-logistic-control-queue-container2-clcqc {
+  background-color: var(--cnx-background-card-400);
+  display: flex;
+  padding-left: 6px;
+  padding-right: 6px;
+  gap: 3px;
+  flex-direction: column;
+  width: 100%;
+  height: 25%;
+  border-radius: 3px;
+  padding-bottom: 3px;
+}
+
+.cnx-logistic-control-header-action-clch {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 5px;
+}
+
+.cnx-logistic-control-header-count-clchc {
+  font-size: 0.97rem !important;
+}
+
+.cnx-logistic-control-header-action-max-window-clchmw {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.cnx-logistic-control-header-action-max-window-clchmw span {
+  font-size: 1.2rem;
+  color: var(--cnx-primary-text);
+}
+
+.cnx-logistic-control-header-action-max-window-clchmw button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cnx-logistic-control-header-action-clch span {
+  font-size: 1.2rem;
+  color: var(--cnx-primary-text);
+}
+
+.cnx-logistic-control-header-action-clch button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1366px) {
+  .cnx-logistic-control-header-action-clch {
+    padding-top: 5px;
+  }
+  .cnx-logistic-control-header-action-clch span {
+    font-size: 1rem;
+    color: var(--cnx-primary-text);
+  }
+
+  .cnx-logistic-control-td-clct span {
+    color: var(--cnx-secondary-text);
+    font-size: 0.8rem;
+  }
+
+  /* .cnx-logistic-control-tr-clct td, th {
+    background-color: transparent;
+    background-clip: padding-box;
+    border-bottom: 3px solid var(--cnx-background-card-400) !important;
+    height: 32px !important;
+    color: #fff;
+    font-size: 0.8rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  } */
+
+  .cnx-logistic-control-tr-th-clctt {
+    background-color: transparent;
+    background-clip: padding-box;
+    border-bottom: 3px solid var(--cnx-background-card-400) !important;
+    height: 25px !important;
+    background-color: var(--cnx-background-card-200);
+    color: #66a8cf;
+    text-align: left;
+    font-size: 0.8rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .cnx-logistic-control-tr-td-clctt {
+    background-color: transparent;
+    background-clip: padding-box;
+    border-bottom: 3px solid var(--cnx-background-card-400) !important;
+    height: 25px !important;
+    color: #fff;
+    font-size: 0.8rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+
+  .cnx-plate-min-screen {
+    font-size: 0.8rem !important;
+    width: 70px;
+  }
+}
+
+.cnx-logistic-control-th-columns-clctc {
+  background-color: var(--cnx-background-card-200);
+  width: 100%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.cnx-logistic-control-th-clct {
+  width: 30%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+
+.cnx-logistic-control-th-clct span {
+  color: #66a8cf;
+  font-size: 0.95rem;
+}
+
+.cnx-logistic-control-td-clct {
+  width: 30%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+
+.cnx-logistic-control-td-clct span {
+  color: var(--cnx-secondary-text);
+  font-size: 0.95rem;
+}
+
+.cnx-logistic-control-td-status-clcts {
+  width: 30%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+
+.cnx-logistic-control-td-yellow-clcty {
+  color: #e7d658 !important;
+}
+.cnx-logistic-control-td-green-clctg {
+  color: #2bce77 !important;
+}
+.cnx-logistic-control-td-red-clctr {
+  color: #fd2646 !important;
+}
+.cnx-logistic-control-td-dark-red-clctr {
+  color: #ba0722 !important;
+}
+.cnx-logistic-control-td-grey-clctg {
+  color: #c7c7c7 !important;
+}
+.cnx-logistic-control-td-lilac-clctl {
+  color: #C8A2C8 !important;
+}
+
+.cnx-logistic-control-td-blue-clctb {
+  color: #2aa6ff !important;
+}
+
+.cnx-logistic-control-tr-list-container-clctlc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+  overflow-y: auto;
+  gap: 3px;
+}
+
+.cnx-logistic-control-tbody-clct {
+  border-collapse: collapse; 
+}
+
+.cnx-logistic-control-tr-list2-clctcl {
+  background-color: var(--cnx-background-card-200);
+  width: 100%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+
+
+.cnx-logistic-control-selected-row-clcsr {
+  background-color: var(--cnx-background-card-100);
+}
+
+
+
+
+
+
+
+
+.cnx-logistic-control-tramos-container-clctc::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.cnx-logistic-control-tramos-container-clctc::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: var(--cnx-nth-child-table-color);
+
+}
+
+.cnx-logistic-control-tramos-container-clctc::-webkit-scrollbar-thumb {
+  background: var(--cnx-input-border);
+
+}
+
+.cnx-horse-list-container-chlc {
+  position: absolute;
+  background-color: var(--cnx-background-card-100);
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 6px;
+  width: 280px;
+  top: 20px;
+  right: 0px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+  z-index: 9;
+}
+
+.cnx-horse-list-header-chlh {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.cnx-horse-list-header-chlh span {
+  color: var(--cnx-primary-text);
+}
+
+.cnx-horse-list-edit-button-chleb {
+  width: 80px;
+  height: 35px;
+  background-color: var(--cnx-semi-transparent-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--cnx-input-border) !important;
+  border-radius: 3px;
+  color: var(--cnx-primary-text);
+}
+.cnx-horse-list-edit-button-chleb:hover {
+  background-color: var(--cnx-semi-transparent-button-hover);
+}

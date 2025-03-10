@@ -1,0 +1,11 @@
+.cnx-flow-register-is-actived-checked-cfriac {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    gap: 10px;
+}
+
+.cnx-flow-register-is-actived-checked-cfriac span {
+    color: var(--cnx-secondary-text)
+}

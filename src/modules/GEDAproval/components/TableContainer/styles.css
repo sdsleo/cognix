@@ -1,0 +1,81 @@
+
+
+  .cnx-user-table-container-cutc {
+    height: 100% !important;
+  }
+
+  .cnx-ged-approval-button-approval-cgaba {
+    height: 33px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--cnx-save-button);
+    color: #ffffff;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .cnx-ged-approval-button-repproval-cgabr {
+    height: 33px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--cnx-error-red);
+    color: #ffffff;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .cnx-ged-approval-small-button-container-cgasbc {
+    display: flex;
+    gap: 6px;
+    width: min-content;
+  }
+
+  .cnx-ged-approval-small-button-approval-cgasba {
+    height: 33px;
+    width: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--cnx-save-button);
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .cnx-ged-approval-small-button-repproval-cgasbr {
+    height: 33px;
+    width: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--cnx-error-red);
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .cnx-ged-approval-small-button-show-cgasbs {
+    height: 33px;
+    width: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cnx-semi-transparent-border-button);
+    border-radius: 3px;
+    background-color: var(--cnx-semi-transparent-button);
+    color: var(--cnx-secondary-text);
+    cursor: pointer;
+    opacity: 0.7;
+  }

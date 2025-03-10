@@ -1,0 +1,164 @@
+.cnx-dialog-component-cdc {
+    margin: auto;
+    left: 0;
+    right: 0;
+    min-width: 400px;
+    max-width: 60%;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cnx-dialog-component-cdc::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.cnx-dialog-close-button-cdcb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    width: 40px !important;
+    padding-right: 20px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.cnx-dialog-container-cdc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px;
+    justify-content: space-between;
+}
+
+.cnx-dialog-icon-container-cdic {
+    display: flex;
+    width: 60px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cnx-gap-cg {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding-right: 15px;
+}
+
+.cnx-dialog-content-cdc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.cnx-dialog-message-cdm {
+    color: rgba(0, 0, 0, 0.8);
+}
+.cnx-dialog-message-warning-cdmw {
+    color: var(--cnx-secondary-text);
+}
+
+.cnx-dialog-default-cdd {
+    border-radius: 4px;
+    border-left: 4px solid rgb(136, 136, 136);
+}
+
+.cnx-dialog-success-cds {
+    border-radius: 4px;
+    border-left: 4px solid rgb(65, 190, 92);
+    background-color: rgb(198, 226, 204);
+}
+
+.cnx-dialog-color-success-cdcs {
+    color: rgb(65, 190, 92);
+}
+
+.cnx-dialog-error-cde {
+    margin: 0 auto !important;
+    top: 60px !important;
+    border-radius: 4px;
+    border-left: 4px solid rgb(201, 52, 52);
+    background-color: #e2bdbd;
+}
+
+.cnx-dialog-color-error-cdce {
+    color: rgb(201, 52, 52);
+}
+
+.cnx-dialog-info-cdi {
+    border-radius: 4px;
+    border-left: 4px solid rgb(31, 100, 228);
+    background-color: rgb(176, 190, 214);
+}
+
+.cnx-dialog-color-info-cdci {
+    color: rgb(31, 100, 228);
+}
+
+.cnx-dialog-warning-cdw {
+    border-radius: 4px;
+    border-left: 4px solid var(--cnx-button-icon);
+    background-color: var(--cnx-background-component);
+    padding-right: 35px;
+}
+
+.cnx-dialog-color-warning-cdcw {
+    color: var(--cnx-button-icon);
+}
+
+.cnx-dialog-color-warning-cdcw span {
+    color: var(--cnx-secondary-text);
+}
+
+.cnx-dialog-color-warning-cdcw p {
+    color: var(--cnx-secondary-text);
+}
+
+.cnx-dialog-buttons-cdb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.cnx-dialog-cancel-button-cdcb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cnx-semi-transparent-border-button);
+    padding: 7px 8px 7px 8px;
+    border-radius: 3px;
+    background-color: var(--cnx-semi-transparent-button);
+    font-size: 0.95rem;
+    color: var(--cnx-secondary-text);
+    cursor: pointer;
+}
+
+.cnx-dialog-cancel-button:hover {
+    background-color: var(--cnx-semi-transparent-button-hover);
+}
+
+.cnx-dialog-confirm-button-cdcb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 8px 8px 8px 8px;
+    border-radius: 3px;
+    background-color: var(--cnx-save-button);
+    font-size: 0.95rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.cnx-dialog-confirm-button:hover {
+    background-color: var(--cnx-save-button-hover);
+}

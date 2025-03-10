@@ -1,0 +1,314 @@
+{
+   "client": "MDC - Bahia",
+   "data": {
+      "factoryPlants": [
+         {
+            "plantName": "MDC - Bahia",
+            "id": "cnx1a",
+            "modules": [
+               {
+                  "title": "DashBoards",
+                  "pt-br": "DashBoards",
+                  "en-us": "DashBoards",
+                  "es-es": "DashBoards",
+                  "icon": "BIDashboard",
+                  "id": "cnx-dashboards",
+                  "submenu": [
+                     {
+                        "title": "Monitor Logístico",
+                        "pt-br": "Monitor Logístico",
+                        "en-us": "Monitor Logístico",
+                        "es-es": "Monitoreo Logístico",
+                        "icon": "TVMonitor",
+                        "id": "cnx-monitoramento-logistico"
+                     },
+                     {
+                        "title": "Ocorrências",
+                        "pt-br": "Ocorrências",
+                        "en-us": "Ocorrências",
+                        "es-es": "Ocorrências",
+                        "icon": "ReportWarning",
+                        "id": "cnx-dashboard-ocorrencias2"
+                     },
+                     {
+                        "title": "Produção e Vazão",
+                        "pt-br": "Produção e Vazão",
+                        "en-us": "Daily Production Flow Behavior",
+                        "es-es": "Produção e Vazão",
+                        "icon": "TVMonitor",
+                        "id": "cnx-dashboard-daily-production-flow-behavior"
+                     },                  
+                     {
+                        "title": "Viagens",
+                        "pt-br": "Viagens",
+                        "en-us": "Viagens",
+                        "es-es": "Viagens",
+                        "icon": "TVMonitor",
+                        "id": "cnx-dashboard-viagens2"
+                     }
+                  ]
+               },
+               {
+                  "title": "Monitor Conectividade",
+                  "pt-br": "Monitor Conectividade",
+                  "en-us": "Monitor Conectividade",
+                  "es-es": "Monitor Conectividade",
+                  "icon": "TVMonitor",
+                  "id": "cnx-monitor-connect"
+               },
+               {
+                  "title": "Ordens",
+                  "pt-br": "Ordens",
+                  "en-us": "Orders",
+                  "es-es": "Pedidos",
+                  "icon": "EntitlementPolicy",
+                  "id": "cnx-orders"
+               },
+               {
+                  "title": "Operação",
+                  "pt-br": "Operação",
+                  "en-us": "Operation",
+                  "es-es": "Operación",
+                  "icon": "ProductionFloorManagement",
+                  "id": "cnx-menu-operation",
+                  "submenu": [
+                     {
+                        "title": "Operações",
+                        "pt-br": "Operação",
+                        "en-us": "Operation",
+                        "es-es": "Operaciones",
+                        "icon": "MergeDuplicate",
+                        "id": "cnx-operation"
+                     },
+                     {
+                        "title": "Controle Logístico",
+                        "pt-br": "Controle Logístico",
+                        "en-us": "Logistic Control",
+                        "es-es": "Control Logístico",
+                        "icon": "DeliveryTruck",
+                        "id": "cnx-controle-logistico2"
+                     }
+                  ]
+               },
+               {
+                  "title": "Calendário de Manutenção",
+                  "pt-br": "Calendário de Manutenção",
+                  "en-us": "Maintenance Schedule",
+                  "es-es": "Programa de Mantenimiento",
+                  "icon": "CalendarSettings",
+                  "id": "cnx-maintenance-schedule"
+               },
+               {
+                  "title": "Calendário Operação",
+                  "pt-br": "Calendário Operação",
+                  "en-us": "PCS Calendar",
+                  "es-es": "Programa Operación",
+                  "icon": "CalendarDay",
+                  "id": "cnx-operation-schedule"
+               },           
+               {
+                  "title": "Calendário PCS",
+                  "pt-br": "Calendário PCS",
+                  "en-us": "Operation Schedule",
+                  "es-es": "Programa PCS",
+                  "icon": "PublicCalendar",
+                  "id": "cnx-pcs-calendar"
+               },
+               {
+                  "title": "Eventos",
+                  "pt-br": "Eventos",
+                  "en-us": "Events",
+                  "es-es": "Eventos",
+                  "icon": "Event",
+                  "id": "cnx-menu-events",
+                  "submenu": [
+                     {
+                        "title": "Tipo de Eventos",
+                        "pt-br": "Tipo de Eventos",
+                        "en-us": "Events Type",
+                        "es-es": "Tipo de Eventos",
+                        "icon": "SpecialEvent",
+                        "id": "cnx-events-type"
+                     },
+                     {
+                        "title": "Eventos",
+                        "pt-br": "Eventos",
+                        "en-us": "Events",
+                        "es-es": "Eventos",
+                        "icon": "AddEvent",
+                        "id": "cnx-events"
+                     },
+                     {
+                        "title": "Registro de Eventos",
+                        "pt-br": "Registro de Eventos",
+                        "en-us": "Events Records",
+                        "es-es": "Registro de Eventos",
+                        "icon": "EventInfo",
+                        "id": "cnx-events-record"
+                     }
+                     
+                  ]
+               },
+               {
+                  "title": "Grupo de Recursos",
+                  "pt-br": "Grupo de Recursos",
+                  "en-us": "Resource Groups",
+                  "es-es": "Grupo de recursos",
+                  "icon": "Org",
+                  "id": "cnx-resource-groups"
+               },
+               {
+                  "title": "Bases",
+                  "pt-br": "Bases",
+                  "en-us": "Bases",
+                  "es-es": "Bases",
+                  "icon": "Database",
+                  "id": "cnx-bases"
+               },
+               {
+                  "title": "Clientes",
+                  "pt-br": "Clientes",
+                  "en-us": "Clientes",
+                  "es-es": "Clientes",
+                  "icon": "AppIconDefaultAdd",
+                  "id": "cnx-clients"
+               },
+               {
+                  "title": "Rotas",
+                  "pt-br": "Rotas",
+                  "en-us": "Routes",
+                  "es-es": "Rotas",
+                  "icon": "BranchFork",
+                  "id": "cnx-routs"
+               },
+               {
+                  "title": "Tramos",
+                  "pt-br": "Tramos",
+                  "en-us": "Tramos",
+                  "es-es": "Tramos",
+                  "icon": "DOM",
+                  "id": "cnx-resources"
+               },
+               {
+                  "title": "Carretas",
+                  "pt-br": "Carretas",
+                  "en-us": "Carretas",
+                  "es-es": "Carretas",
+                  "icon": "Car",
+                  "id": "cnx-vehicles"
+               },
+               {
+                  "title": "Cadastro de Cavalo",
+                  "pt-br": "Cavalo",
+                  "en-us": "Cavalo",
+                  "es-es": "Cavalo",
+                  "icon": "GoToDashboard",
+                  "id": "cnx-horses"
+               },
+               {
+                  "title": "Cadastro de Motoristas",
+                  "pt-br": "Motoristas",
+                  "en-us": "Motorias",
+                  "es-es": "vehículos",
+                  "icon": "Contact",
+                  "id": "cnx-drivers"
+               },
+               {
+                  "title": "Produtos",
+                  "pt-br": "Produtos",
+                  "en-us": "Products",
+                  "es-es": "productos",
+                  "icon": "Product",
+                  "id": "cnx-product",
+                  "submenu": [
+                     {
+                        "title": "Produtos",
+                        "pt-br": "Produtos",
+                        "en-us": "Products",
+                        "es-es": "productos",
+                        "icon": "ProductList",
+                        "id": "cnx-add-product"
+                     },
+                     {
+                        "title": "Grupo de Produtos",
+                        "pt-br": "Grupo de Produtos",
+                        "en-us": "Product Group",
+                        "es-es": "Grupo de productos",
+                        "icon": "ProductGroupVariant",
+                        "id": "cnx-add-group-product"
+                     }
+                  ]
+               },
+               {
+                  "title": "Documentos",
+                  "pt-br": "Documentos",
+                  "en-us": "Documents",
+                  "es-es": "Documentos",
+                  "icon": "TextDocument",
+                  "id": "cnx-documents-menu",
+                  "submenu": [
+                     {
+                        "title": "Documentos",
+                        "pt-br": "Documentos",
+                        "en-us": "Documents",
+                        "es-es": "Documentos",
+                        "icon": "DocLibrary",
+                        "id": "cnx-documents"
+                     },
+                     {
+                        "title": "Aprovação de documentos",
+                        "pt-br": "Aprovação de documentos",
+                        "en-us": "Documents Approval",
+                        "es-es": "Aprovação de documentos",
+                        "icon": "DocumentApproval",
+                        "id": "cnx-documents-approval"
+                     },
+                     {
+                        "title": "Fluxo de Aprovação",
+                        "pt-br": "Fluxo de Aprovação",
+                        "en-us": "Flow Approval",
+                        "es-es": "Fluxo de Aprovação",
+                        "icon": "GroupedList",
+                        "id": "cnx-auth-flow"
+                     }
+                  ]
+               },
+               {
+                  "title": "Turnos",
+                  "pt-br": "Turnos",
+                  "en-us": "Shifts",
+                  "es-es": "Turnos",
+                  "icon": "Timer",
+                  "id": "cnx-turns"
+               },
+               {
+                  "title": "Usuários",
+                  "pt-br": "Usuários",
+                  "en-us": "Users",
+                  "es-es": "Usuarios",
+                  "icon": "Contact",
+                  "id": "cnx-user",
+                  "submenu": [
+                     {
+                        "title": "Usuários",
+                        "pt-br": "Usuários",
+                        "en-us": "Users",
+                        "es-es": "Usuarios",
+                        "icon": "AddFriend",
+                        "id": "cnx-add-user"
+                     },
+                     {
+                        "title": "Grupo de Usuários",
+                        "pt-br": "Grupo de Usuários",
+                        "en-us": "User Group",
+                        "es-es": "Grupo de Usuarios",
+                        "icon": "AddGroup",
+                        "id": "cnx-add-group"
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}

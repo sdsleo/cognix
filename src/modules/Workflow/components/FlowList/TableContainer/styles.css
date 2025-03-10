@@ -1,0 +1,20 @@
+.cnx-small-icon-button-skills-management-csibsm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 33px;
+    border: solid 1px var(--cnx-input-border);
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--cnx-semi-transparent-button);
+    color: var(--cnx-button-icon);
+  }
+  
+  .cnx-small-icon-button-skills-management-csibsm:hover {
+    background-color: var(--cnx-semi-transparent-button-hover);
+  }
+
+  .cnx-user-table-container-cutc {
+    height: 100% !important;
+  }

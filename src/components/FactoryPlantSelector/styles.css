@@ -1,0 +1,92 @@
+.cnx-factory-plant-selector-container-cfpsc {
+    position: relative;
+}
+
+.cnx-factory-plant-ul-cfpu {
+    list-style-type: none;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    flex-direction: column;
+    border-radius: 0px 0px 2px 2px;
+    padding-top: 7px;
+    background: rgb(35,35,36);
+    background: linear-gradient(90deg, rgba(35,35,36,1) 0%, rgba(30,30,31,1) 100%); 
+    box-shadow: 11px 10px 9px -8px rgba(0,0,0,0.2);
+}
+
+.cnx-factory-plant-ul-show-cfpus {
+    display: block;
+    max-height: 500px;
+    transition: 0.3s;
+}
+
+.cnx-factory-plant-li-cfpl {
+    width: 100%;
+    height: 36px;
+    border-top: 1px solid rgba(88, 89, 91, 0.1);
+}
+
+.cnx-factory-plant-list-options-cfplo {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding-left: 14px;
+    border: none;
+    color: rgba(240, 255, 255, 0.829);
+}
+.cnx-factory-plant-list-options-cfplo span {
+    font-size: 0.9rem;
+}
+
+.cnx-factory-plant-list-options-cfplo:hover {
+    background-color: rgba(88, 89, 91, 0.3);
+}
+
+.cnx-factory-plant-selector-cfps {
+    width: 200px;
+    height: 36px;
+    background: rgb(35,35,36);
+    background: linear-gradient(90deg, rgba(35,35,36,0) 0%, rgba(30,30,31,1) 100%); 
+    color: rgba(240, 255, 255, 0.829);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 2px;
+    border-radius: 2px;
+}
+
+.cnx-factory-plant-selector-cfps span {
+    font-size: 0.90rem;
+}
+
+.cnx-factory-plant-selector-cfps button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: none;
+    background-color: transparent;
+    color: rgba(240, 255, 255, 0.829);
+}
+
+.cnx-factory-plant-chevron-svg-cfpcs {
+    transition: 0.3s;
+}
+
+.cnx-factory-plant-chevron-svg-up-cfpcsu {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+

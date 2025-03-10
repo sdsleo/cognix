@@ -1,0 +1,182 @@
+.cnx-filter-container-cfc {
+  display: flex;
+  height: 95%;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 17;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* .cnx-filter-modal-cfm {
+    display: flex;
+    height: 90%;
+    width: 95%;
+    border-radius: 6px;
+} */
+
+.cnx-filter-header-container-cfhc {
+  grid-area: cnxfhc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+  border-bottom: 1px solid var(--cnx-input-border);
+}
+
+.cnx-filter-header-container-cfhc h2 {
+  color: var(--cnx-secondary-text);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.cnx-filter-header-container-cfhc button {
+  color: var(--cnx-secondary-text);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnx-filter-header-container-cfhc button:hover {
+  color: var(--cnx-primary-text);
+}
+
+.cnx-filter-footer-container-cffc {
+  grid-area: cnxffc;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: right;
+  padding: 0px 20px 0px 20px;
+  border-top: 1px solid var(--cnx-input-border);
+}
+
+.cnx-filter-btn-clear-cfbc {
+  cursor: pointer;
+  background-color: var(--cnx-semi-transparent-button);
+  color: var(--cnx-secondary-text);
+  border: solid 1px var(--cnx-semi-transparent-border-button);
+  border-radius: 3px;
+  padding: 0px 10px 0px 10px;
+  height: 35px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnx-filter-btn-clear-cfbc:hover {
+  background-color: var(--cnx-semi-transparent-button-hover);
+}
+
+.cnx-filter-btn-apply-cfba {
+  cursor: pointer;
+  background-color: var(--cnx-save-button);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 3px;
+  padding: 0px 10px 0px 10px;
+  height: 35px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnx-filter-btn-apply-cfba:hover {
+  background-color: var(--cnx-save-button-hover) !important;
+}
+
+.cnx-filter-modal-cfm {
+  height: 90%;
+  width: 95%;
+  border-radius: 6px;
+  background-color: var(--cnx-background-component);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "cnxfhc cnxfhc cnxfhc"
+    "cnxfls cnxfcs cnxfrs"
+    "cnxffc cnxffc cnxffc";
+}
+
+/* .cnx-filter-modal-cfm {
+    height: 90%;
+    width: 95%;
+    border-radius: 6px;
+    background-color: var(--cnx-background-component);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto 40% 50px;
+    grid-template-areas:
+      "cnxfhc cnxfhc cnxfhc"
+      "cnxfls cnxfcs cnxfcs"
+      "cnxfrs cnxfrs cnxfrs"
+      "cnxffc cnxffc cnxffc";
+} */
+
+@media (min-height: 1024px) and (max-width: 820px) {
+  .cnx-filter-modal-cfm {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    background-color: var(--cnx-background-component);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto 40% 70px;
+    grid-template-areas:
+      "cnxfhc cnxfhc cnxfhc"
+      "cnxfls cnxfcs cnxfcs"
+      "cnxfrs cnxfrs cnxfrs"
+      "cnxffc cnxffc cnxffc";
+  }
+
+  .cnx-filter-footer-container-cffc {
+    grid-area: cnxffc;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+    padding: 20px 20px 20px 20px !important;
+    border-top: 1px solid var(--cnx-input-border);
+  }
+}
+
+@media (max-height: 820px) and (max-width: 1180px) {
+  .cnx-filter-modal-cfm {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    background-color: var(--cnx-background-component);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto 70px;
+    grid-template-areas:
+      "cnxfhc cnxfhc cnxfhc"
+      "cnxfls cnxfcs cnxfrs"
+      "cnxffc cnxffc cnxffc";
+  }
+
+  .cnx-filter-footer-container-cffc {
+    grid-area: cnxffc;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+    padding: 0px 20px 6px 20px;
+    border-top: 1px solid var(--cnx-input-border);
+  }
+}
+
+.cnx-filter-display-none-cfdn {
+  display: none;
+}

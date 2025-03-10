@@ -1,0 +1,273 @@
+:root {
+  /***** CNX DEFAULT PALETTE *****/
+  --cnx-primary-orange: #f0831b;
+  --cnx-info-blue: #196cd8;
+  --cnx-success-green: #49c573;
+  --cnx-warning-yellow: #fff200;
+  --cnx-error-red: #ea3b55;
+
+  /***** MAIN MENU PALETTE *****/
+  --cnx-primary-menu-text: #F7FAFF;
+  --cnx-secondary-menu-text: #dfe1e6c9;
+  --cnx-hint-menu-text: rgba(223, 225, 230, 0.3);
+
+  /***** BUTTONS PALETTE *****/
+  --cnx-action-button: #196cd8;
+  --cnx-action-button-hover: #1b65c5;
+  --cnx-save-button: #5ab679;
+  --cnx-save-button-hover: #499663;
+  --cnx-clear-button: #ffffff00;
+  --cnx-clear-button-hover: rgba(0, 0, 0, 0.05);
+  --cnx-button-icon: rgba(0, 0, 0, 0.4);
+  --cnx-semi-transparent-border-button: rgba(0, 0, 0, 0.275);
+  --cnx-semi-transparent-button: rgba(0, 0, 0, 0.02);
+  --cnx-semi-transparent-button-hover: rgba(0, 0, 0, 0.05);
+  --cnx-nth-child-table-color: rgba(0, 0, 0, 0.027);
+
+  /***** INPUTS PALETTE *****/
+  --cnx-input-border: #00000046;
+  --cnx-input-background: transparent;
+  --cnx-input-text: #0c0c0c;
+  --cnx-input-placeholder-text: rgba(12, 12, 12, 0.5);
+  --cnx-input-icon: rgba(0, 0, 0, 0.369);
+  --cnx-input-icon-background: rgba(0, 0, 0, 0.3);
+  --cnx-input-label: #0c0c0c;
+  --cnx-input-tag-background: rgba(0, 0, 0, 0.1);
+  --cnx-input-tag-text: rgba(12, 12, 12, 0.8);
+  --cnx-input-tag-border: rgba(0, 0, 0, 0.275);
+  --cnx-input-search-hover-option: rgba(0, 0, 0, 0.05);
+  --cnx-input-selected-option: rgba(0, 0, 0, 0.09);
+
+  /***** TEXT PALETTE *****/
+  --cnx-primary-text: #0c0c0c;
+  --cnx-secondary-text: #1d1d1d;
+  --cnx-hint-text: rgba(12, 12, 12, 0.3);
+  --cnx-text-decoration-underline: #55a4ff;
+
+  /***** BACKGROUNDS PALETTE *****/
+  --cnx-background-component: #ffffff;
+  --cnx-background-card-100: #dfdfdf;
+  --cnx-background-card-200: #d2d1d1;
+  --cnx-background-card-300: #c0c0c0;
+  --cnx-background-card-400: #a9a9a9;
+
+  --cnx-separate-line: #00000036;
+
+  /***** FULL CALENDAR *****/
+  --fc-button-text-color: var(--cnx-button-icon);
+  --fc-button-bg-color: var(--cnx-semi-transparent-button);
+  --fc-button-hover-bg-color: var(--cnx-semi-transparent-button-hover);
+  --fc-button-border-color: var(--cnx-input-border);
+  --fc-button-hover-border-color: var(--cnx-input-border);
+  --fc-button-active-bg-color: var(--cnx-semi-transparent-button);
+  --fc-border-color: var(--cnx-hint-text);
+  --fc-today-bg-color: rgba(240, 131, 27, 0.15);
+  --fc-button-active-border-color: transparent;
+
+  --fc-page-bg-color: var(--cnx-background-component);
+  --fc-neutral-bg-color: rgba(208, 208, 208, 0.1);
+  --fc-border-color: var(--cnx-input-border);
+}
+
+.cnx-custom-th-re-order {
+  font-size: 0.9rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: var(--cnx-primary-text) !important;
+}
+.cnx-active-label-checkbox {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--cnx-primary-text) !important;
+}
+
+.cnx-custom-short-container-th-re-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff4d
+}
+
+/***** FULL CALENDAR *****/
+.fc-button {
+  outline: 0 !important;
+}
+
+.fc .fc-toolbar-title {
+  color: var(--cnx-primary-text);
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: var(--cnx-primary-text);
+  font-weight: 400;
+}
+
+.fc .fc-daygrid-day-number {
+  color: var(--cnx-primary-text);
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end {
+  color: var(--cnx-secondary-text);
+  font-weight: 400;
+}
+
+.fc .fc-button:disabled {
+  opacity: .8;
+}
+
+.fc .fc-button:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.fc-more-link {
+  color: var(--cnx-secondary-text);
+}
+
+.fc-popover-title {
+  color: var(--cnx-secondary-text);
+}
+
+.fc-icon-x {
+  color: var(--cnx-secondary-text);
+}
+
+.fc-multimonth-title {
+  color: var(--cnx-secondary-text);
+}
+
+
+/***** FULL CALENDAR *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+text {
+  fill: #ffffff !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body, textarea, button, span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+input[type='checkbox']:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-top: -2px;
+  top: 0;
+  left: 0;
+  border: 2px solid rgba(136, 136, 136, 0.5);
+  border-radius: 2px;
+  background-color: var(--cnx-background-component);
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type='checkbox']:checked:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin-top: 0px;
+  top: -1px;
+  left: -0px;
+  border: 1px solid var(--cnx-info-blue);
+  border-radius: 2px;
+  background-color: var(--cnx-info-blue);
+}
+
+.cnx-input-checkbox-green-color-cicgc:checked:before {
+  border: 1px solid var(--cnx-success-green) !important;
+  background-color: var(--cnx-success-green) !important;
+}
+
+.cnx-input-checkbox-green-color-cicgc:checked:after {
+  background-color: var(--cnx-success-green) !important;
+}
+
+.cnx-input-checkbox-blue-color-cicbc:checked:before {
+  border: 1px solid var(--cnx-info-blue) !important;
+  background-color: var(--cnx-info-blue) !important;
+}
+
+.cnx-input-checkbox-blue-color-cicbc:checked:after {
+  background-color: var(--cnx-info-blue) !important;
+}
+
+.cnx-input-checkbox-red-color-cicrc:checked:before {
+  border: 1px solid var(--cnx-error-red) !important;
+  background-color: var(--cnx-error-red)  !important;
+}
+
+.cnx-input-checkbox-red-color-cicrc:checked:after {
+  background-color: var(--cnx-error-red)  !important;
+}
+
+input[type='checkbox']:checked:after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 8px;
+  margin-top: -2px;
+  border: solid var(--cnx-background-component);
+  background-color: var(--cnx-info-blue);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  cursor: pointer;
+  width: 14px !important;
+  height: 14px !important;
+  margin-top: 5px;
+}
+
+.cnx-input-border-error-highlight {
+  border: 1px solid var(--cnx-error-red) !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.cnx-display-none {
+  display: none !important;
+}
+
+.cnx-modules-main-container-cmmc {
+  background: var(--cnx-background-component);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+
+
+input, select, textare{
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/cnx.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MES COGNIX</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      window.apis = {
+        //PRODUÇÃO
+        // core: "http://10.95.12.118:7081",
+        // user: "http://10.95.12.118:7080",
+        // anyLogic: "http://10.95.12.118:7060",
+        // elipse: "http://10.95.12.118:7061",
+        // angeLira: "http://10.95.12.118:7073",
+        // socket: "wss/socket",
+
+        // HOMOLOGAÇÃO
+        core: "http://10.95.12.117:7081",
+        user: "http://10.95.12.117:7080",
+        anyLogic: "http://10.95.12.117:7060",
+        elipse: "http://10.95.12.117:7061",
+        angeLira: "http://10.95.12.117:7063",
+        socket: "wss/socket"
+
+        // HOMOLOGAÇÃO 2
+        // core: "https://36fa72f79309bd14ebc9120854845e0c.serveo.net",
+        // user: "https://sixty-moose-ask.loca.lt",
+        // anyLogic: "https://sixty-moose-ask.loca.lt",
+        // elipse: "https://sixty-moose-ask.loca.lt",
+        // angeLira: "https://sixty-moose-ask.loca.lt",
+        // socket: "wss/socket"
+
+        // core: "http://10.11.12.94:600", // HOMOLOGAÇÃO COGNIX
+        // user: "http://10.11.12.94:600", // IAGO
+      };
+      window.about = {
+        client: "MDC - Bahia",
+        version: "1.2.77",
+        lastUpdate: "09/08/2024"
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

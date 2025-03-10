@@ -1,0 +1,34 @@
+.cnx-theme-select-container-ctsc {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cnx-theme-select-button-ctsb {
+    background-color: transparent;
+    width: 90px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+}
+
+
+.cnx-theme-select-button-ctsb:hover {
+    color: rgb(230, 230, 230);
+}
+
+.cnx-theme-select-item-highlight-ctsih {
+    color: var(--cnx-primary-orange) !important;
+}
+
+
+@media (max-width: 500px) {
+
+}

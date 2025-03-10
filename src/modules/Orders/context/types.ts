@@ -1,0 +1,33 @@
+export interface IOrdersContext {
+    tableData: any;
+    loadingTable?: boolean;
+    enumerators: any;
+    enumeratorsElipse: any;
+    enumeratorsTramos: any;
+    orderId: any | null;
+    orderById: any | null;
+    parentsData: any | null;
+    orderOperationId: any | null;
+    angeLiraResultId: any | null;
+    operationData: any;
+    elipseResultData: any;
+    angeLiraResultData: any;
+    angeLiraLogsResultData: any;
+    saving?: boolean;
+    dispacth: React.Dispatch<any>;
+    addModal: boolean;
+    editModal: boolean;
+    editOperationModal: boolean;
+    editAllModal: boolean;
+    addAngeLiraResultsModal: boolean;
+    editAngeLiraResultsModal: boolean;
+    editElipseResultsModal: boolean;
+    page: string;
+    rowData: any;
+    rowDataOperation: any;
+    rowDataAngeLira: any;
+    rowDataElipse: any;
+    rowIds: any[];
+    appliedFilters: any;
+    operationParamsData: any;
+}

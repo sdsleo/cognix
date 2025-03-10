@@ -1,0 +1,59 @@
+.cnx-side-bar {
+  grid-area: sidebar;
+}
+
+.cnx-tab-bar {
+  grid-area: tabbar;
+}
+
+.cnx-main-view-container {
+  grid-area: mainviewcontainer;
+  display: flex;
+}
+
+.cnx-grid-container-cgc {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "tabbar tabbar tabbar tabbar"
+    "sidebar mainviewcontainer mainviewcontainer mainviewcontainer"
+    "sidebar mainviewcontainer mainviewcontainer mainviewcontainer";
+}
+
+@media (max-width: 500px) {
+  .cnx-grid-container-cgc {
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "tabbar tabbar tabbar"
+      "mainviewcontainer mainviewcontainer mainviewcontainer"
+      "mainviewcontainer mainviewcontainer mainviewcontainer";
+  }
+}
+
+@media (min-width: 501px) and (max-width: 820px) {
+  .cnx-grid-container-cgc {
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "tabbar tabbar tabbar"
+      "mainviewcontainer mainviewcontainer mainviewcontainer"
+      "mainviewcontainer mainviewcontainer mainviewcontainer";
+  }
+}
+
+@media (max-height: 820px) and (max-width: 1180px) {
+  .cnx-grid-container-cgc {
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "tabbar tabbar tabbar"
+      "mainviewcontainer mainviewcontainer mainviewcontainer"
+      "mainviewcontainer mainviewcontainer mainviewcontainer";
+  }
+}

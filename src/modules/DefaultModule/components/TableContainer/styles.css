@@ -1,0 +1,11 @@
+.cnx-text-decoration-link {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cnx-text-decoration-link span {
+  text-decoration: underline;
+  font-size: 0.85rem;
+  color: var(--cnx-text-decoration-underline);
+}

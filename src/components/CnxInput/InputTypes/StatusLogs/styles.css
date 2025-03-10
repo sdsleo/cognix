@@ -1,0 +1,88 @@
+.cnx-status-logs-input-container-cslic {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+}
+
+.cnx-status-logs-input-csli {
+  width: 200px;
+  height: 33px;
+  background-color: var(--cnx-input-background);
+  color: var(--cnx-primary-text);
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cnx-status-logs-input-csli::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  filter: invert(0.6);
+}
+
+.cnx-status-logs-input-label-cslil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: min-content;
+  height: min-content !important;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-status-logs-actions-container-cslac {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.cnx-status-logs-small-icon-button-cslsib {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  width: 33px;
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: var(--cnx-semi-transparent-button);
+  color: var(--cnx-button-icon);
+}
+
+.cnx-status-logs-small-icon-button-cslsib:hover {
+  background-color: var(--cnx-semi-transparent-button-hover);
+}
+
+.cnx-status-logs-width-size-cslws {
+  width: 158px !important;
+}
+
+.cnx-status-logs-list-container-csllc {
+  border: none;
+  width: 404px;
+  height: 300px;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: -185px;
+  overflow-y: auto;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 13;
+  background-color: var(--cnx-background-component);
+}
+
+.cnx-status-logs-no-data-cslnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cnx-status-logs-no-data-cslnd span {
+  font-size: 0.9rem;
+  color: var(--cnx-secondary-text);
+}
+
+

@@ -1,0 +1,8 @@
+.cnx-order-view-fix-height {
+    height: calc(100vh - 50px) !important;
+}
+
+.cnx-elipse-bread-crambs-container {
+    position: absolute;
+    z-index: 2;
+}

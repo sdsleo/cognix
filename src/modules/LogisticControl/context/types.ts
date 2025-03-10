@@ -1,0 +1,33 @@
+export interface IModuleContext {
+    tableData: any;
+    tableDataHorse: any;
+    cardData: any;
+    cardId: any;
+    idCard: any;
+    carretaData: any;
+    carretaRowData: any;
+    loadingTable?: boolean;
+    showAll?: boolean;
+    enumerators: any;
+    enumeratorsHorse: any;
+    enumeratorsOrder: any;
+    enumeratorsElipse: any;
+    enumeratorsTramos: any;
+    saving?: boolean;
+    dispacth: React.Dispatch<any>;
+    addModal: boolean;
+    editModal: boolean;
+    editHorseModal: boolean;
+    editOperationModal: boolean;
+    addAngeLiraResultModal: boolean;
+    addElipseResultModal: boolean;
+    page: string;
+    cardView: string;
+    rowData: any;
+    rowDataHorse: any;
+    rowDataEvents: any;
+    appliedFilters: any;
+    appliedHorseFilters: any;
+    autoRefresh: boolean;
+    timeToRefresh: number;
+}

@@ -1,0 +1,311 @@
+.cnx-dashboard-view-main-container-clmmc {
+    width: 100%;
+    height: 100vh;
+    background-color: #2d2d2d;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 15% calc(78% - 50px);
+    grid-template-areas:
+      "header header"
+      "summary summary"
+      "leftvolume rightvolume";
+  }
+  
+  .cnx-gantt-background-title-expanded-ctbt {
+    margin-top: 100px;
+    width: 100%;
+    height: calc(100% - 150px);
+    z-index: 12;
+    position: absolute;
+  }
+  
+  .cnx-logistic-monitoring-comp-gantt-view-container-clmcvc {
+  
+    width: 100%;
+    display: flex;
+    grid-area: view;
+    padding-left: 20px;
+  }
+  
+  .cnx-logistic-monitoring-view-button-clcsvb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px 3px 0px 0px;
+    cursor: pointer;
+    color: var(--cnx-secondary-text);
+  }
+  
+  .cnx-logistic-monitoring-view-button-clcsvb:hover {
+    background-color: var(--cnx-nth-child-table-color);
+  }
+  
+  .cnx-bottom-highlight-selector-cbhs {
+    border-bottom: 3px solid var(--cnx-primary-orange);
+  }
+  
+  .cnx-dashboard-view-summary-container-clmccc {
+    grid-area: summary;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px !important;
+    gap: 5px;
+  }
+  
+  .cnx-summary-results-container-csrc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .cnx-summary-results-title-csrt {
+    color: #16bdbd;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .cnx-summary-results-value-csrv {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  .cnx-dashboard-view-header-clmh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #282828;
+    grid-area: header;
+  }
+  
+  .cnx-dashboard-view-header-clmh span {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  .cnx-dashboard-view-actions-container-clmac {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .cnx-dashboard-view-right-volume-container-clmrvc {
+    grid-area: rightvolume;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cnx-custom-summary-header-table-ccsht {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .cnx-custom-summary-header-table-ccsht span {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .cnx-gantt-background-title-ctbt {
+    position: relative;
+    width: 100% !important;
+    height: 100%;
+    align-items: center;
+    border: solid 1px rgba(84, 84, 84, 0.290) !important;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .cnx-no-results {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    color: #ffffff6c;
+    z-index: 4;
+  }
+  
+  .cnx-gantt-button-expand {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    color: #99a4a4;
+    cursor: pointer;
+  }
+  .cnx-gantt-button-expand:hover {
+    position: absolute;
+    z-index: 2;
+    top: 13px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    color: #ebebeb;
+    cursor: pointer;
+  }
+  
+  .cnx-dashboard-view-left-volume-container-clmlvc {
+    grid-area: leftvolume;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cnx-dashboard-view-header-window-button-clmhwb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  
+  .cnx-dashboard-view-header-window-button-clmhwb:hover {
+    opacity: 1;
+  }
+
+  .cnx-dashboard-view-header-refresh {
+    background-color: transparent;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+    font-size: 20px !important;
+  }
+
+  .cnx-main-dashboard-view-header-refresh {
+    background-color: transparent;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+    font-size: 20px !important;
+  }
+
+  .cnx-main-dashboard-highlight-refresh {
+    background-color: transparent;
+    color: var(--cnx-primary-orange) !important;
+    opacity: 1 !important;
+    font-size: 20px !important;
+  }
+
+  .cnx-custom-transport-view-tooltip-gantt-max {
+    padding: 20px;
+    background-color: #2d2d2d !important;
+  }
+  
+  .cnx-custom-transport-view-tooltip-gantt {
+    background-color: #2d2d2d !important;
+    padding: 20px;
+  }
+  
+  .cnx-custom-transport-view-tooltip-item-container-gantt-max span {
+    color: #ffffffd5;
+  }
+  
+  .cnx-custom-transport-view-tooltip-item-container-gantt span {
+    color: #ffffffd5;
+  }
+  
+  .cnx-custom-transport-view-tooltip-title-max {
+    font-weight: 400 !important;
+    color: #75caff !important;
+    margin-right: 3px;
+  }
+  .cnx-custom-transport-view-tooltip-title {
+    font-weight: 400 !important;
+    color: #75caff !important;
+    margin-right: 3px;
+  }
+
+  
+  @media (min-width: 2048px) {
+    .cnx-dashboard-view-main-container-clmmc {
+      width: 100%;
+      height: 100vh;
+      background-color: #2d2d2d;
+      position: relative;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 60px auto;
+      grid-template-areas:
+        "header header"
+        "leftvolume rightvolume";
+    }
+  
+    .cnx-dashboard-view-header-clmh {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 15px;
+      padding-left: 15px;
+      background-color: #282828;
+      grid-area: header;
+    }
+  
+    .cnx-dashboard-view-header-clmh span {
+      color: #ffffff;
+      font-size: 35px;
+      font-weight: 400;
+    }
+  
+    .cnx-logistic-monitoring-comp-gantt-header-window-svg-clmhws {
+      width: 1.8rem !important;
+      height: 1.8rem !important;
+    }
+  }
+  
+  @media (min-width: 3840px) {
+    .cnx-dashboard-view-main-container-clmmc {
+      width: 100%;
+      height: 100vh;
+      background-color: #2d2d2d;
+      position: relative;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 120px auto;
+      grid-template-areas:
+        "header header"
+        "leftvolume rightvolume";
+    }
+  
+    .cnx-dashboard-view-header-clmh {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 20px;
+      padding-left: 20px;
+      background-color: #282828;
+      grid-area: header;
+    }
+  
+    .cnx-dashboard-view-header-clmh span {
+      color: #ffffff;
+      font-size: 60px;
+      font-weight: 400;
+    }
+  
+    .cnx-logistic-monitoring-comp-gantt-header-window-svg-clmhws {
+      width: 3.5rem !important;
+      height: 3.5rem !important;
+    }
+  }
+  

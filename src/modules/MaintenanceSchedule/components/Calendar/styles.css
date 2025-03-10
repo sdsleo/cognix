@@ -1,0 +1,114 @@
+.cnx-calendar-component-container-cccc {
+  position: relative;
+  width: 100% !important;
+  height: 100%;
+  padding: 60px 40px 40px 40px;
+}
+
+.cnx-blue-tag {
+  background-color: var(--cnx-info-blue);
+}
+
+.cnx-red-tag {
+  background-color: var(--cnx-error-red);
+}
+
+.cnx-green-tag {
+  background-color: var(--cnx-success-green);
+}
+
+.cnx-grey-tag {
+  background-color: #8c8c8c;
+}
+
+.cnx-maintenance-schedule-summary-container-calendar-cmsscc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  padding-left: 120px;
+}
+
+.cnx-maintenance-schedule-separator-calendar-cmssc {
+  height: 100%;
+  border-left: 1px solid var(--cnx-input-border);
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.cnx-maintenance-schedule-summary-item-container-calendar-cmssicc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cnx-maintenance-schedule-summary-item-container-calendar-cmssicc span {
+  font-size: 16px;
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-maintenance-schedule-summary-dot-calendar-cmssdc {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.cnx-label-dot-calendar-cldc {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  width: min-content;
+  height: min-content !important;
+  color: var(--cnx-secondary-text);
+  font-size: 16px;
+}
+
+.cnx-maintenance-schedule-summary-item-container-cmssic span {
+  font-size: 16px;
+  color: var(--cnx-secondary-text);
+  margin-left: -6px;
+}
+
+.cnx-maintenance-schedule-summary-container-cmssc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.cnx-maintenance-schedule-separator-cmss {
+  height: 25px;
+  border-left: 1px solid var(--cnx-input-border) !important;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.cnx-maintenance-schedule-summary-item-container-cmssic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+} 
+
+.cnx-maintenance-schedule-summary-item-container-cmssic input {
+  margin-top: 0px !important;
+} 
+

@@ -1,0 +1,43 @@
+.cnx-user-breadcrumbs-cub {
+    position: absolute;
+    z-index: 2;
+    padding-left: 20px;
+    padding-top: 15px;
+    display: flex;
+}
+
+.cnx-user-breadcrumbs-cub button {
+    display: flex;
+    gap: 5px;
+    margin-left: 5px;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: var(--cnx-secondary-text);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.cnx-user-breadcrumbs-cub button:hover {
+    color: var(--cnx-secondary-text) !important;
+}
+
+.cnx-user-hint-crumb-cuhc {
+    color: var(--cnx-hint-text) !important;
+}
+
+.cnx-icon-calendar-crumb-color-ciccc {
+    color: var(--cnx-secondary-text);
+}
+
+.cnx-icon-list-crumb-color-cilcc {
+    color: var(--cnx-secondary-text);
+}
+
+.cnx-user-breadcrumbs-cub .cnx-calendar-crumbs-ccc:hover .cnx-icon-calendar-crumb-color-ciccc {
+    color: var(--cnx-secondary-text) !important;
+}
+
+.cnx-user-breadcrumbs-cub .cnx-list-crumbs-clc:hover .cnx-icon-list-crumb-color-cilcc {
+    color: var(--cnx-secondary-text) !important;
+}

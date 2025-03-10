@@ -1,0 +1,20 @@
+.cnx-logistic-monitoring-breadcrumbs-clcb {
+    position: absolute;
+    z-index: 2;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.cnx-logistic-monitoring-breadcrumbs-clcb span {
+    color: var(--cnx-secondary-text);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.cnx-logistic-monitoring-breadcrumbs-clcb span:hover {
+    color: var(--cnx-secondary-text) !important;
+}
+
+.cnx-logistic-monitoring-hint-crumb-clchc {
+    color: var(--cnx-hint-text) !important;
+}

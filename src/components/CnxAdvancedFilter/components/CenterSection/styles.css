@@ -1,0 +1,79 @@
+.cnx-filter-center-section-cfcs {
+    grid-area: cnxfcs;
+    display: flex;
+    width: 100% !important;
+    border-left: 1px solid var(--cnx-input-border);
+    border-right: 1px solid var(--cnx-input-border);
+}
+
+.cnx-filter-input-type-cfit {
+    display: flex;
+    width: 100% !important;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cnx-input-text-center-section-citcs {
+    width: 200px !important;
+    height: 33px !important;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 12px;
+    color: var(--cnx-input-text);
+    border: solid 1px var(--cnx-input-border);
+    background-color: var(--cnx-input-background);
+    caret-color: var(--cnx-input-placeholder-text);
+}
+
+.cnx-input-text-center-section-citcs::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    filter: invert(0.6);
+}
+
+.cnx-btn-save-center-section-cbscs {
+    cursor: pointer;
+    background-color: var(--cnx-action-button);
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 0px 10px 0px 10px;
+    height: 35px;
+    width: 90px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnx-btn-save-center-section-cbscs:hover {
+    background-color: var(--cnx-action-button-hover);
+}
+
+.cnx-filter-input-type-cfit input {
+    /* border: solid 1px var(--cnx-input-border);
+    background-color: transparent;
+    width: 140px;
+    color: var(--cnx-input-text);
+    padding-left: 5px;
+    border-radius: 3px;
+    height: 35px !important; */
+}
+
+.cnx-filter-action-container-cfac {
+    width: 100%;
+}
+
+.cnx-filter-action-container-cfac span {
+    display: flex;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    color: var(--cnx-input-text);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.cnx-advanced-mult-check-box-container-width {
+    width: 250px !important;
+}

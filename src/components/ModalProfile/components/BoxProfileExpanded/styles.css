@@ -1,0 +1,77 @@
+.cnx-box-profile-button-cbpb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--cnx-secondary-menu-text);
+    padding: 0px 20px 0px 20px;
+    transition: 0.2s;
+}
+
+.cnx-box-profile-button-cbpb:hover {
+    transition: 0.1s;
+    color: var(--cnx-primary-orange);
+    background-color: rgba(88, 89, 91, 0.1);
+}
+
+.cnx-box-profile-button-cbpb:hover .cnx-box-profile-title-cbpt {
+    transition: 0.1s;
+    color: var(--cnx-primary-menu-text);
+}
+
+.cnx-icon-title-container-citc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.cnx-box-profile-title-cbpt {
+    color: var(--cnx-secondary-menu-text);
+    text-align: left;
+}
+
+.cnx-box-profile-chevron-svg-cbpcs {
+    color: var(--cnx-secondary-menu-text);
+    transition: 0.3s;
+}
+
+.cnx-box-profile-chevron-svg-up-cbpcsu {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.cnx-expansive-profile-container-cepc {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 50px;
+    border: none;
+    overflow: hidden;
+}
+
+.cnx-box-profile-background-expanded-cbpbe {
+    background-color: rgba(88, 89, 91, 0.2);
+}
+
+@media (max-width: 500px) {
+    .cnx-box-profile-button-cbpb {
+        width: 100%;
+        min-height: 50px;
+    }
+
+    .cnx-expansive-profile-container-cepc {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 50px;
+        border: none;
+        overflow: hidden;
+    }
+}

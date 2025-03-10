@@ -1,0 +1,153 @@
+.cnx-logistic-monitoring-main-container-clmmc {
+    width: 100%;
+    height: 100vh;
+    background-color: #2d2d2d;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+      "header header"
+      "leftvolume rightvolume"
+  }
+  
+  .cnx-logistic-monitoring-header-clmh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #282828;
+    grid-area: header;
+  }
+  
+  .cnx-logistic-monitoring-header-clmh span {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .cnx-logistic-monitoring-actions-container-clmac {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .cnx-logistic-monitoring-left-volume-container-clmlvc {
+    grid-area: leftvolume;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cnx-logistic-monitoring-right-volume-container-clmrvc {
+    grid-area: rightvolume;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cnx-logistic-monitoring-header-window-button-clmhwb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  
+  .cnx-logistic-monitoring-header-window-button-clmhwb:hover {
+    opacity: 1;
+  }
+  
+  .cnx-logistic-monitoring-header-refresh {
+    background-color: transparent;
+    color: #ffffff !important;
+    opacity: 0.6 !important;
+    font-size: 20px !important;
+  }
+
+  .cnx-logistic-monitoring-highlight-refresh {
+    background-color: transparent;
+    color: var(--cnx-primary-orange) !important;
+    opacity: 1 !important;
+    font-size: 20px !important;
+  }
+  
+  @media (min-width: 2048px) {
+    .cnx-logistic-monitoring-main-container-clmmc {
+      width: 100%;
+      height: 100vh;
+      background-color: #2d2d2d;
+      position: relative;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 60px auto;
+      grid-template-areas:
+        "header header"
+        "leftvolume rightvolume"
+    }
+  
+    .cnx-logistic-monitoring-header-clmh {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 15px;
+      padding-left: 15px;
+      background-color: #282828;
+      grid-area: header;
+    }
+  
+    .cnx-logistic-monitoring-header-clmh span {
+      color: #ffffff;
+      font-size: 35px;
+      font-weight: 400;
+    }
+  
+    .cnx-logistic-monitoring-header-window-svg-clmhws {
+      width: 1.8rem !important;
+      height: 1.8rem !important;
+    }
+  }
+  
+  @media (min-width: 3840px) {
+    .cnx-logistic-monitoring-main-container-clmmc {
+      width: 100%;
+      height: 100vh;
+      background-color: #2d2d2d;
+      position: relative;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 120px auto;
+      grid-template-areas:
+        "header header"
+        "leftvolume rightvolume"
+    }
+  
+    .cnx-logistic-monitoring-header-clmh {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 20px;
+      padding-left: 20px;
+      background-color: #282828;
+      grid-area: header;
+    }
+  
+    .cnx-logistic-monitoring-header-clmh span {
+      color: #ffffff;
+      font-size: 60px;
+      font-weight: 400;
+    }
+  
+    .cnx-logistic-monitoring-header-window-svg-clmhws {
+      width: 3.5rem !important;
+      height: 3.5rem !important;
+    }
+  }
+  
+  
+  

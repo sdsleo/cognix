@@ -1,0 +1,103 @@
+.cnx-logistic-control-events-order-child-clceoc {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50) !important;
+    z-index: 9;
+}
+
+.cnx-logistic-control-events-modal-container-clcemc {
+    background-color: var(--cnx-background-component);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: 700px;
+    height: 60%;
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+
+.cnx-logistic-control-events-modal-container-clcemc h1 {
+    color: var(--cnx-primary-text);
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.cnx-logistic-control-events-input-container-clceic {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 40px 40px 20px 40px;
+}
+
+.cnx-logistic-control-events-action-buttons-container-clceabc {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+}
+
+.cnx-logistic-control-events-cancel-button-clcecb {
+    border: solid 1px var(--cnx-input-border);
+    background-color: var(--cnx-clear-button);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    color: var(--cnx-secondary-text);
+}
+
+.cnx-logistic-control-events-cancel-button-clcecb:hover {
+    background-color: var(--cnx-clear-button-hover);
+}
+
+.cnx-logistic-control-events-confirm-button-clcecb {
+    border: solid 1px var(--cnx-input-border);
+    background-color: var(--cnx-save-button);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.cnx-logistic-control-events-confirm-button-clcecb:hover {
+    background-color: var(--cnx-save-button-hover);
+}
+
+.cnx-logistic-control-events-create-order-child-clcecoc {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: solid 1px var(--cnx-input-border);
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--cnx-semi-transparent-button);
+    color: var(--cnx-button-icon);
+  }
+  
+  .cnx-logistic-control-events-create-order-child-clcecoc:hover {
+    background-color: var(--cnx-semi-transparent-button-hover);
+  }

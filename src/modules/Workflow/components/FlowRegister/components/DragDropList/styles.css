@@ -1,0 +1,274 @@
+.cnx-flow-register-dnd-container-cfrdc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  /* padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--cnx-background-component);
+  -webkit-box-shadow: -3px 0px 16px -2px rgba(0,0,0,0.44);
+  box-shadow: -3px 0px 16px -2px rgba(0,0,0,0.44);
+  z-index: 2;
+  overflow-y: auto;
+  overflow-x: hidden; */
+}
+
+.cnx-flow-register-dnd-header-cfrdh {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--cnx-secondary-text)
+}
+
+.cnx-flow-register-dnd-columns-cfrdc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cnx-flow-register-dnd-th-number-cfrdt {
+  width: 15%;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.cnx-flow-register-dnd-th-number-cfrdt span {
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-flow-register-dnd-th-cfrdt {
+  width: 30%;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.cnx-flow-register-dnd-th-cfrdt span {
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-flow-register-dnd-items-cfrdi {
+  display: flex;
+  gap: 8px;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px var(--cnx-input-border);
+  border-left: solid 1px var(--cnx-button-icon);
+  border-radius: 4px;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  /* padding: 0px 10px 0px 10px; */
+  cursor: move;
+  color: var(--cnx-secondary-text);
+  transition: border-left 0.1s linear;
+  background-color: var(--cnx-nth-child-table-color);
+}
+
+.cnx-dnd-select-container-cdsc {
+  display: flex;
+  width: 100%;
+}
+
+.cnx-flow-register-dnd-item-container-cfrdic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.cnx-flow-register-dnd-items-cfrdi:hover {
+  border-left: solid 4px  var(--cnx-button-icon)
+}
+
+.d-none {
+  display: none;
+}
+
+.cnx-btn-dnd-item-cbdi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--cnx-primary-text);
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+}
+
+.cnx-btn-dnd-item-cbdi:hover {
+  font-size: 16px;
+  color: var(--cnx-primary-text);
+}
+
+.cnx-order-column-actions-coca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--cnx-primary-text);
+}
+
+.cnx-btn-dnd-modal-cbdm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--cnx-input-icon);
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+
+.cnx-btn-dnd-modal-cbdm:hover {
+  font-size: 20px;
+  color: var(--cnx-input-icon);
+}
+
+.cnx-select-column-order-csc {
+  height: 35px;
+  width: 100%;
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 4px;
+  padding: 0px 8px 0px 8px;
+  background-color: var(--cnx-input-background);
+  color: var(--cnx-secondary-text);
+}
+
+.hover-drag {
+  border-left: solid 4px var(--cnx-primary-orange);
+}
+
+.svg-arrows-up-down-solid-icon path {
+  fill: var(--cnx-button-icon);
+}
+.svg-arrows-up-down-solid-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.cnx-svg-xmark-icon-csxi path {
+  fill: var(--cnx-button-icon);
+}
+
+.cnx-svg-xmark-icon-csxi:hover path {
+  fill: var(--cnx-button-icon);
+}
+
+.cnx-svg-xmark-icon-csxi {
+  width: 14px;
+  height: 14px;
+}
+
+.cnx-svg-xmark-icon-csxi:hover {
+  width: 16px;
+  height: 16px;
+}
+
+.cnx-svg-xmark-modal-icon-csxmi path {
+  fill: var(--cnx-button-icon);
+}
+
+.cnx-svg-xmark-modal-icon-csxmi:hover path {
+  fill: var(--cnx-button-icon);
+}
+
+.cnx-svg-xmark-modal-icon-csxmi {
+  width: 16px;
+  height: 16px;
+}
+
+.cnx-svg-xmark-modal-icon-csxmi:hover {
+  width: 18px;
+  height: 18px;
+}
+
+.cnx-flow-register-action-input-search-container-cfraisc {
+  display: flex;
+  align-items: center;
+}
+
+.cnx-flow-register-action-input-search-container-cfraisc input {
+  height: 35px;
+  width: 260px;
+  border-radius: 3px 0px 0px 3px;
+  border: solid 1px var(--cnx-input-border);
+  border-right: none;
+  padding-left: 10px;
+  background-color: transparent;
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-flow-register-action-input-search-container-cfraisc button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: var(--cnx-semi-transparent-button);
+  border: 1px solid var(--cnx-semi-transparent-border-button);
+  border-radius: 0px 3px 3px 0px;
+  color: var(--cnx-button-icon);
+  cursor: pointer;
+}
+
+.cnx-flow-register-action-buttons-container-cfrabc {
+  padding: 10px 0px 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 22px;
+}
+
+.cnx-flow-register-action-button-cfrab {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cnx-flow-register-small-button-cfrsb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: var(--cnx-semi-transparent-button);
+  border: 1px solid var(--cnx-semi-transparent-border-button);
+  border-radius: 3px;
+  color: var(--cnx-button-icon);
+  cursor: pointer;
+}
+
+.cnx-flow-register-small-button-cfrsb:hover {
+  background-color: var(--cnx-semi-transparent-button-hover);
+}
+
+.cnx-flow-register-add-button-cfrab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  padding: 0px 10px 0px 10px;
+  background-color: var(--cnx-action-button);
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.cnx-flow-register-add-button-cfrab:hover {
+  background-color: var(--cnx-action-button-hover);
+}

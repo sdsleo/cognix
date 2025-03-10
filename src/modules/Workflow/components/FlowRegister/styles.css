@@ -1,0 +1,43 @@
+.cnx-workflow-register-container-cwrc {
+  background-color: var(--cnx-background-component);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cnx-workflow-register-header-cwrh {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cnx-workflow-register-left-section-cwrls {
+  height: 50px;
+  padding: 0px 20px 0px 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cnx-workflow-register-left-section-title-cwrlst {
+  color: var(--cnx-primary-text);
+  font-size: 18px;
+}
+
+.cnx-workflow-register-right-section-cwrrs {
+  border: solid 1px rgb(0, 255, 94);
+  height: 50px;
+  width: 50%;
+  align-items: center;
+}
+
+.cnx-workflow-register-drag-drop-list-cwrddl {
+  height: 100%;
+  width: 50%;
+}

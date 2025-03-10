@@ -1,0 +1,203 @@
+.cnx-mult-select-checkbox-label-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cnx-mult-select-checkbox-label {
+  color: var(--cnx-secondary-text);
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  display: flex;
+  font-size: 13px;
+  font-weight: 400;
+  height: min-content;
+}
+
+.cnx-loading-search {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+  right: 0px;
+  top: 0px;
+  height: 33px;
+  width: 33px;
+}
+
+.cnx-mult-select-checkbox-container {
+  position: relative;
+  width: 200px;
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 3px;
+  height: 33px;
+}
+
+.cnx-ckeckbox-actions-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: flex-end;
+}
+
+.cnx-ckeckbox-actions-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--cnx-input-icon);
+}
+
+.cnx-checked-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 14px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: var(--cnx-input-icon-background);
+}
+
+.cnx-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 300px;
+  border-radius: 3px;
+  margin: 5px 9px 0px 9px;
+}
+
+.cnx-mult-select-checkbox-searchcontainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 9px 0px 9px;
+  height: 33px;
+}
+
+.cnx-mult-checkbox-input-list-items-cmcili {
+  display: flex;
+  height: 33px;
+  width: 120px !important;
+  border-radius: 3px;
+  border: none;
+  color: var(--cnx-input-text);
+  background-color: var(--cnx-input-background);
+  caret-color: var(--cnx-input-placeholder-text);
+}
+
+.cnx-search-input-checkbox-container {
+  width: 100%;
+  display: flex;
+}
+
+.cnx-mult-checkbox-select-search {
+  display: flex;
+  height: 27px;
+  width: 90%;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  color: var(--cnx-input-text);
+  border: solid 1px var(--cnx-input-border);
+  background-color: var(--cnx-input-background);
+  caret-color: var(--cnx-input-placeholder-text);
+}
+
+.cnx-mult-checkbox-select-search::placeholder {
+  color: var(--cnx-input-placeholder-text) !important;
+}
+
+
+.cnx-mult-checkbox-select-search::-webkit-search-cancel-button {
+  filter: grayscale(80%);
+  filter: contrast(0%);
+  opacity: 0.5;
+  cursor: pointer;
+  position: relative;
+  right: 1px;
+}
+
+.sbl-circ {
+  height: 10px;
+  width: 10px;
+  color: var(--cnx-input-icon);
+  background-color: var(--cnx-background-component);
+  position: relative;
+  display: inline-block;
+  border: 3px solid;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate 1s linear infinite; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+
+.cnx-mult-checkbox-select {
+  min-width: 100%;
+  max-width: 110px;
+  position: absolute;
+  border: solid 1px var(--cnx-input-border);
+  border-radius: 6px;
+  background-color: var(--cnx-background-component);
+  z-index: 14;
+  box-shadow: 1px 5px 8px -7px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 1px 5px 8px -7px rgba(0,0,0,0.50);
+  -moz-box-shadow: 1px 5px 8px -7px rgba(0,0,0,0.50);
+}
+
+.cnx-mult-checkbox-async-option-li-cmcaol {
+  font-size: 14px !important;
+  height: 38px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--cnx-background-component);
+  color: var(--cnx-input-text);
+}
+
+.cnx-checkbox-input {
+  margin-bottom: 5px;
+}
+
+.cnx-selected-option {
+  background-color: var(--cnx-input-selected-option);
+}
+
+.cnx-mult-checkbox-async-option-li-cmcaol:hover {
+  cursor: pointer;
+  background-color: var(--cnx-input-search-hover-option);
+}
+
+.cnx-display-none {
+  display: none;
+}
+
+.cnx-checkbox-selected-list {
+  overflow-y: auto;
+  max-height: 140px;
+  border-bottom: solid 1px var(--cnx-input-border);
+}
+
+.cnx-no-checkbox-selected-list {
+  overflow-y: auto;
+  max-height: 140px;
+}
+

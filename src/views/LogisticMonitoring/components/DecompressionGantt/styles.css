@@ -1,0 +1,259 @@
+.cnx-logistic-monitoring-decomp-gantt-main-container-clmmc {
+  width: 100%;
+  height: 100vh;
+  background-color: #2d2d2d;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75px 50px 20% calc(80% - 175px);
+  grid-template-areas:
+    "header header"
+    "view view"
+    "summary summary"
+    "leftvolume rightvolume";
+}
+
+.cnx-gantt-background-title-expanded-ctbt {
+  margin-top: 100px;
+  width: 100%;
+  height: calc(100% - 150px);
+  z-index: 12;
+  position: absolute;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-view-container-clmcvc {
+
+  width: 100%;
+  display: flex;
+  grid-area: view;
+  padding-left: 20px;
+}
+
+.cnx-logistic-monitoring-view-button-clcsvb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 3px 3px 0px 0px;
+  cursor: pointer;
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-logistic-monitoring-view-button-clcsvb:hover {
+  background-color: var(--cnx-nth-child-table-color);
+}
+
+.cnx-bottom-highlight-selector-cbhs {
+  border-bottom: 3px solid var(--cnx-primary-orange);
+}
+
+.cnx-logistic-monitoring-decomp-gantt-summary-container-clmccc {
+  grid-area: summary;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cnx-summary-results-container-csrc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cnx-summary-results-title-csrt {
+  color: #16bdbd;
+  font-size: 20px;
+  font-weight: 400;
+}
+.cnx-summary-results-value-csrv {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-header-clmh {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #282828;
+  grid-area: header;
+  padding-bottom: 10px;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-header-clmh span {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-actions-container-clmac {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 14px;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-left-volume-container-clmlvc {
+  grid-area: leftvolume;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.cnx-custom-summary-header-table-ccsht {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.cnx-custom-summary-header-table-ccsht span {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.cnx-gantt-background-title-ctbt {
+  position: relative;
+  width: 100% !important;
+  height: 100%;
+  align-items: center;
+  border: solid 1px #545454a2;
+  border-radius: 4px;
+}
+
+.cnx-gantt-button-expand {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  color: #99a4a4;
+  cursor: pointer;
+}
+.cnx-gantt-button-expand:hover {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  color: #ebebeb;
+  cursor: pointer;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-right-volume-container-clmrvc {
+  grid-area: rightvolume;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-header-window-button-clmhwb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-header-window-button-clmhwb:hover {
+  opacity: 1;
+}
+
+.cnx-logistic-monitoring-decomp-gantt-header-refresh {
+  background-color: transparent;
+  color: #ffffff !important;
+  opacity: 0.6 !important;
+  font-size: 20px !important;
+}
+
+@media (min-width: 2048px) {
+  .cnx-logistic-monitoring-decomp-gantt-main-container-clmmc {
+    width: 100%;
+    height: 100vh;
+    background-color: #2d2d2d;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px auto;
+    grid-template-areas:
+      "header header"
+      "leftvolume rightvolume";
+  }
+
+  .cnx-logistic-monitoring-decomp-gantt-header-clmh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #282828;
+    grid-area: header;
+  }
+
+  .cnx-logistic-monitoring-decomp-gantt-header-clmh span {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .cnx-logistic-monitoring-decomp-gantt-header-window-svg-clmhws {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+  }
+}
+
+@media (min-width: 3840px) {
+  .cnx-logistic-monitoring-decomp-gantt-main-container-clmmc {
+    width: 100%;
+    height: 100vh;
+    background-color: #2d2d2d;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 120px auto;
+    grid-template-areas:
+      "header header"
+      "leftvolume rightvolume";
+  }
+
+  .cnx-logistic-monitoring-decomp-gantt-header-clmh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #282828;
+    grid-area: header;
+  }
+
+  .cnx-logistic-monitoring-decomp-gantt-header-clmh span {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+  }
+
+  .cnx-logistic-monitoring-decomp-gantt-header-window-svg-clmhws {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+}

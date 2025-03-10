@@ -1,0 +1,124 @@
+.cnx-workflow-config-cwc {
+    background-color: var(--cnx-background-component);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cnx-workflow-header-actions-cwha {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.cnx-workflow-header-button-cwhb {
+    height: 35px;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--cnx-save-button);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.cnx-workflow-form-container-cwfc {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cnx-workflow-form-content-cwfc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: min-content;
+}
+
+.cnx-workflow-form-top-cwft {
+    display: flex;
+    gap: 10px;
+}
+
+.cnx-workflow-form-bottom-cwfb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.cnx-text-area-flow-size {
+    width: 100% !important;
+}
+
+.cnx-workflow-flow-status-container-cwfsc {
+    display: flex;
+}
+
+.cnx-workflow-status-cws {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 110px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.cnx-flow-status-line-cfsl {
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    border-color: var(--cnx-save-button);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.cnx-flow-status-circle-cfsc {
+    width: 35px;
+    height: 35px;
+    background-color: var(--cnx-save-button);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.cnx-flow-status-circle-cfsc {
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.cnx-flow-status-date-cfsd {
+    font-size: 14px;
+    color: var(--cnx-secondary-text);
+}
+
+.cnx-flow-status-label-cfsl {
+    color: var(--cnx-secondary-text);
+}
+
+.cnx-circle-1 {
+    top: 38px;
+    left: 0;
+}
+
+.cnx-circle-2 {
+    top: 38px;
+    left: 41%;
+}
+
+.cnx-circle-3 {
+    top: 38px;
+    right: 0;
+}

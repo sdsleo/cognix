@@ -1,0 +1,15 @@
+.cnx-auth-level-action-button-calab {
+    height: 33px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: var(--cnx-semi-transparent-button);
+    border: 1px solid var(--cnx-semi-transparent-border-button);
+    border-radius: 3px;
+    color: var(--cnx-secondary-menu-text);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.cnx-auth-level-action-button-calab:hover {
+    background-color: var(--cnx-semi-transparent-button-hover);
+}

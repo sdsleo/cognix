@@ -1,0 +1,97 @@
+.cnx-add-area-record-th-number-link {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cnx-add-area-record-th-number-link span {
+  text-decoration: underline;
+  font-size: 0.85rem;
+  color: var(--cnx-text-decoration-underline);
+}
+
+.cnx-maintanance-schedule-column-type-tag-cmsct {
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  padding: 2px 0px 2px 0px;
+}
+
+.cnx-maintanance-schedule-column-type-tag-cmsct span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.cnx-blue-tag {
+  background-color: var(--cnx-info-blue);
+}
+
+.cnx-red-tag {
+  background-color: var(--cnx-error-red);
+}
+
+.cnx-green-tag {
+  background-color: var(--cnx-success-green);
+}
+
+.cnx-grey-tag {
+  background-color: #8c8c8c;
+}
+
+.cnx-maintenance-schedule-summary-container-cmssc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.cnx-maintenance-schedule-separator-cmss {
+  height: 100%;
+  border-left: 1px solid var(--cnx-input-border);
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.cnx-maintenance-schedule-summary-item-container-cmssic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+} 
+
+.cnx-maintenance-schedule-summary-item-container-cmssic input {
+  margin-top: 0px !important;
+} 
+
+.cnx-label-dot-calendar-cldc {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  width: min-content;
+  height: min-content !important;
+  color: var(--cnx-secondary-text);
+  font-size: 16px;
+}
+
+.cnx-maintenance-schedule-summary-item-container-cmssic span {
+  font-size: 16px;
+  color: var(--cnx-secondary-text);
+  margin-left: -6px;
+}
+
+.cnx-maintenance-schedule-summary-dot-cmssd {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}

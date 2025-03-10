@@ -1,0 +1,23 @@
+.cnx-font-size-select-container-cfssc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+}
+
+.cnx-font-size-select-container-cfssc button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+    color: rgba(240, 255, 255, 0.527);
+    cursor: pointer;
+    height: 100%;
+}
+
+.cnx-font-size-select-container-cfssc button:hover {
+    color: #F0831B;
+}

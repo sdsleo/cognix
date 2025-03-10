@@ -1,0 +1,237 @@
+.cnx-login-container-clc {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #2b2d2f;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.cnx-login-form-container-clfc {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px 50px 80px 50px;
+  width: 450px;
+  font-size: 0.9rem;
+  color: azure;
+  border-radius: 8px 0px 0px 8px;
+  background: transparent;
+  opacity: 0;
+  translate: -23px;
+}
+
+.cnx-login-form-container-transform {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px 50px 80px 50px;
+  width: 450px;
+  font-size: 0.9rem;
+  color: azure;
+  border-radius: 8px 8px 8px 8px;
+  background: rgb(54, 57, 63);
+  /* background: linear-gradient(
+    110deg,
+    rgba(54, 57, 63, 0.87718837535014) 0%,
+    rgba(43, 45, 47, 0) 68%
+  ); */
+  box-shadow: -9px 10px 9px -4px rgba(0, 0, 0, 0.1);
+  transition: 1.5s ease-in-out;
+  opacity: 1;
+  translate: -0px;
+}
+
+.cnx-login-form-cognix-logo {
+  width: 6rem;
+}
+
+.cnx-login-form-section-clfs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cnx-login-form-section-clfs a {
+  color: azure;
+  opacity: 0.8;
+}
+
+.cnx-input-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cnx-login-container-input-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.cnx-login-container-input-show-password-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cnx-login-input-icon {
+  color: rgba(240, 255, 255, 0.548);
+  transition: 0.3s;
+}
+
+.cnx-input-login-user-cilu {
+  background: rgb(39, 40, 43);
+  /* background: linear-gradient(
+    110deg,
+    rgba(39, 40, 43, 0.87718837535014) 0%,
+    rgba(39, 40, 43, 0.911) 90%
+  ); */
+  outline: none;
+  height: 48px;
+  border-radius: 3px;
+  border: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  padding-left: 48px;
+  color: azure;
+  width: 100%;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.cnx-login-form-icon-on-foucus {
+  transition: 0.3s;
+  color: #f0821b;
+}
+
+.cnx-login-form-input-on-foucus {
+  transition: 0.3s;
+  border: solid 1px rgba(255, 255, 255, 0.082);
+  border-bottom: solid 1px #f0821ba8;
+}
+
+.cnx-input-login-password-cilp {
+  background: rgb(39, 40, 43);
+  /* background: linear-gradient(
+    110deg,
+    rgba(39, 40, 43, 0.87718837535014) 0%,
+    rgba(39, 40, 43, 0.911) 90%
+  ); */
+  outline: none;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 1px transparent;
+  border-bottom: solid 1px transparent;
+  padding-left: 40px;
+  color: azure;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.cnx-error-message-login-ceml {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--cnx-error-red);
+  margin-top: -5px;
+}
+
+.cnx-visibility-hidden {
+  visibility: hidden;
+}
+
+.cnx-error-message-login-ceml span {
+  font-size: 0.9rem;
+}
+
+.cnx-forgot-my-password-cfmp {
+  margin-top: -10px;
+}
+
+.cnx-input-login-button-cilb {
+  padding-bottom: 5px;
+  background-color: #f0831b;
+  border: none;
+  outline: invert;
+  height: 48px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #1e1f20;
+}
+
+.cnx-input-login-button-cilb:hover {
+  background-color: #f0831b;
+  opacity: 0.93;
+  transition: 0.2;
+}
+
+.cnx-login-copyright-version-section-clcvs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.79rem;
+}
+
+.display-none {
+  display: none;
+}
+
+.loader {
+  width: 24px;
+  height: 24px;
+  border: 4px solid rgba(39, 40, 43, 0.911);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cnx-span-login-loading-csll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 15px;
+}
+
+.loading-span {
+  font-weight: 600 !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(39, 40, 43, 0.911);
+
+}
+
+.cnx-span-login-csl {
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(39, 40, 43, 0.911);
+
+}

@@ -1,0 +1,38 @@
+.cnx-no-word-break {
+  word-break: normal !important;
+  width: 80px !important;
+}
+
+.cnx-order-operations-td-yellow-clcty {
+  background-color: #e7d658 !important;
+}
+.cnx-order-operations-td-green-clctg {
+  background-color: #2bce77 !important;
+}
+.cnx-order-operations-td-red-clctr {
+  background-color: #fd2646 !important;
+}
+.cnx-order-operations-td-dark-red-clctr {
+  background-color: #ba0722 !important;
+}
+.cnx-order-operations-td-grey-clctg {
+  background-color: #c7c7c7 !important;
+}
+.cnx-order-operations-td-lilac-clctl {
+  background-color: #c8a2c8 !important;
+}
+
+.cnx-order-operations-td-blue-clctb {
+  background-color: #2aa6ff !important;
+}
+
+.cnx-orders-operation-column-info-coci {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cnx-button-icon);
+  cursor: pointer;
+}
+

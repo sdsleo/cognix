@@ -1,0 +1,54 @@
+
+.cnx-order-page-view {
+    background: var(--cnx-background-component);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.cnx-operations-page-view {
+    background: var(--cnx-background-component);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.cnx-angeLiraResults-page-view {
+    background: var(--cnx-background-component);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.cnx-logsResults-page-view {
+    background: var(--cnx-background-component);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cnx-groups-breadcrumbs-cgb {
+    position: absolute;
+    z-index: 2;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.cnx-filter-container-order-cfco {
+    border: solid 1px #f00 !important;
+    background: #32323b;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cnx-groups-breadcrumbs-cgb span {
+    color: var(--cnx-secondary-text);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.cnx-groups-breadcrumbs-cgb span:hover {
+    color: var(--cnx-secondary-text) !important;
+}
+
+.cnx-groups-hint-crumb-cghc {
+    color: var(--cnx-hint-text) !important;
+}

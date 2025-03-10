@@ -1,0 +1,17 @@
+.cnx-ged-approval-pending-summary-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    height: 60px;
+}
+
+.cnx-ged-approval-pending-summary-container span {
+    color: var(--cnx-secondary-text);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.cnx-ged-approval-pending-summary-active-filter {
+    color: var(--cnx-text-decoration-underline) !important;
+}

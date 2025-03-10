@@ -1,0 +1,178 @@
+.cnx-date-ranger-picker-main-container-cdrpmc {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.cnx-date-ranger-picker-main-input-container-cdrpmic {
+  display: flex;
+  align-items: center;
+}
+
+.cnx-date-ranger-picker-main-input-cdrpmi {
+  width: 167px;
+  height: 33px;
+  border-radius: 3px 0px 0px 3px;
+  border: solid 1px var(--cnx-input-border);
+  border-right: none;
+  background-color: var(--cnx-input-background);
+  padding-left: 10px;
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-date-ranger-picker-main-button-cdrpmb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  border-radius: 0px 3px 3px 0px;
+  border: solid 1px var(--cnx-input-border);
+  border-left: none;
+  background-color: var(--cnx-input-background);
+  color: var(--cnx-input-icon);
+}
+
+.cnx-date-ranger-picker-float-container-cdrpfc {
+  position: absolute;
+  top: 33px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cnx-background-component);
+}
+
+.cnx-date-ranger-picker-float-custom-container-cdrpfcc {
+  position: absolute;
+  top: 33px;
+  display: flex;
+  flex-direction: column;
+  /* border: solid 1px var(--cnx-input-border); */
+  border-radius: 3px;
+  gap: 15px;
+  padding: 15px;
+  background-color: var(--cnx-background-component);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+.cnx-date-ranger-picker-shortcut-list-cdrpsl {
+  width: 200px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  /* border: solid 1px var(--cnx-input-border); */
+  border-top: none;
+  border-radius: 3px 3px 3px 3px;
+  background-color: var(--cnx-background-component);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+.cnx-date-ranger-picker-shortcut-list-cdrpsl button {
+  height: 33px;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #63d3ff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cnx-date-ranger-picker-shortcut-list-cdrpsl button:hover {
+  background-color: var(--cnx-semi-transparent-button-hover);
+}
+
+.cnx-date-ranger-picker-shortcut-list-flex-row-cdrpslfr {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  border-top: solid 1px var(--cnx-input-border);
+  background-color: var(--cnx-background-component);
+  gap: 10px;
+}
+
+.cnx-date-ranger-picker-shortcut-list-flex-row-cdrpslfr button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-right: 1px solid var(--cnx-input-border);
+  padding-right: 10px;
+  text-decoration: underline;
+  color: #00a8eb;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cnx-date-ranger-picker-shortcut-list-flex-row-cdrpslfr
+  button:nth-last-child(2) {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-right: none;
+  padding-right: 10px;
+  text-decoration: underline;
+  color: #00a8eb;
+}
+
+.cnx-date-ranger-picker-shortcut-list-flex-row-cdrpslfr button:last-child {
+  display: none;
+}
+
+.cnx-date-ranger-picker-float-inputs-container-cdrpfic {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.cnx-date-ranger-picker-label-input-container-cdrplic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cnx-date-ranger-picker-label-input-container-cdrplic label {
+  display: flex;
+  width: fit-content;
+  font-size: 14px;
+  align-items: center;
+  color: var(--cnx-primary-text)
+}
+
+.cnx-date-ranger-picker-label-input-container-cdrplic input {
+  width: 100%;
+  height: 33px;
+  background-color: transparent;
+  border-radius: 3px;
+  border: solid 1px var(--cnx-input-border);
+  padding-right: 5px;
+  padding-left: 5px;
+  color: var(--cnx-secondary-text);
+}
+
+.cnx-date-ranger-picker-label-input-container-cdrplic
+  input::-webkit-calendar-picker-indicator {
+  opacity: 0.9;
+  filter: invert(0.5);
+  cursor: pointer;
+}
+
+.cnx-date-ranger-picker-apply-button-cdrpab {
+  height: 33px;
+  background-color: var(--cnx-action-button);
+  border-radius: 3px;
+  border: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cnx-date-ranger-picker-apply-button-cdrpab:hover {
+  background-color: var(--cnx-action-button-hover);
+}

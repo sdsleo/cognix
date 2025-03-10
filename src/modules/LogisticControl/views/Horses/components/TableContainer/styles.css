@@ -1,0 +1,10 @@
+.cnx-horse-location-check-container-chlcc {
+    height: 33px;
+    padding-left: 20px;
+}
+.cnx-horse-location-check-container-chlcc input {
+    margin-top: -1px !important;
+}
+.cnx-horse-location-check-container-chlcc {
+    color: var(--cnx-primary-text);
+}

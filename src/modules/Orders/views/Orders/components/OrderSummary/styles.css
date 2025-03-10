@@ -1,0 +1,70 @@
+.cnx-orders-custom-summary-container-ccosc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cnx-orders-separators-cos {
+    height: 30px;
+    border-top: none; 
+    border-bottom: none; 
+    border-right: none; 
+    border-left: 1px solid var(--cnx-separate-line); 
+}
+
+.cnx-orders-container-bullet-cocb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.cnx-orders-container-bullet-cocb span {
+    color: var(--cnx-secondary-text);
+    font-size: 14px;
+}
+
+.cnx-orders-circular-bullet-cocb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.cnx-bullet-color-yellow {
+    background-color: #e7d658 !important;
+}
+
+.cnx-bullet-color-orange {
+    background-color: #f3964a !important;
+}
+
+.cnx-bullet-color-blue {
+    background-color: #2aa6ff !important;
+}
+
+.cnx-bullet-color-green {
+    background-color: #2bce77 !important;
+}
+
+.cnx-bullet-color-black {
+    background-color: #000000 !important;
+}
+
+.cnx-bullet-color-red {
+    background-color: #fd2646 !important;
+}
+
+.cnx-orders-icon-clock-coic {
+    font-size: 20px !important;
+    color: #ff1135 !important;
+    margin-bottom: 3px;
+}
+
+.cnx-orders-icon-blocked-coib {
+    font-size: 16px !important;
+    color: var(--cnx-button-icon) !important;
+    margin-bottom: 2px;
+}

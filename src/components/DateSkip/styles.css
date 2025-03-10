@@ -1,0 +1,66 @@
+.cnx-flow-behavior-day-skip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: solid 1px var(--cnx-input-border);
+    height: 35px;
+    border-radius: 3px;
+  }
+  
+  .cnx-flow-behavior-day-skip-btn-left {
+    border: none;
+    border-right: 1px solid var(--cnx-input-border);
+    background-color: rgba(255, 255, 255, 0.020);
+    height: 100%;
+    width: 35px;
+    color: var(--cnx-button-icon);
+    cursor: pointer;
+  }
+  
+  .cnx-flow-behavior-day-date {
+    font-size: 1rem !important;
+  }
+  
+  .cnx-flow-behavior-day-skip-btn-left:hover {
+    background-color: rgba(255, 255, 255, 0.050);
+  }
+  
+  .cnx-flow-behavior-day-skip-btn-right {
+    border: none;
+    border-left: 1px solid var(--cnx-input-border);
+    background-color: rgba(255, 255, 255, 0.020);
+    height: 100%;
+    width: 35px;
+    color: var(--cnx-button-icon);
+    cursor: pointer;
+  }
+  .cnx-flow-behavior-day-skip-btn-right:hover {
+    background-color: rgba(255, 255, 255, 0.050);
+  }
+
+  .cnx-input-date-skip {
+    width: 90px !important;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    padding-left: 5px;
+  }
+
+  .cnx-date-skip-input-date-type {
+    width: 140px !important;
+    background-color: var(--cnx-input-background);
+    color: var(--cnx-primary-text);
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .cnx-date-skip-input-date-type:disabled {
+    background-color: var(--cnx-semi-transparent-button-hover) !important;
+  }
+  
+  .cnx-date-skip-input-date-type::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    filter: invert(0.6);
+  }
+  

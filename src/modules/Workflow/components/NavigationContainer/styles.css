@@ -1,0 +1,22 @@
+.cnx-breadcrumbs-container-cbc {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    z-index: 2;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.cnx-breadcrumbs-container-cbc span {
+    color: var(--cnx-secondary-text);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.cnx-breadcrumbs-container-cbc span:hover {
+    color: var(--cnx-secondary-text) !important;
+}
+
+.cnx-user-hint-crumb-cuhc {
+    color: var(--cnx-hint-text) !important;
+}

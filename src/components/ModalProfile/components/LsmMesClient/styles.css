@@ -1,0 +1,12 @@
+.cnx-lsm-mes-client-container-clmcc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.cnx-lsm-mes-client-container-clmcc span {
+    color: rgba(240, 255, 255, 0.719);
+}
