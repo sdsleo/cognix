@@ -84,7 +84,7 @@ function Table() {
       type: ACTIONS.SET_FILTERS,
       payload: [],
     });
-    getList({ PageSize: 100, Filters: "?RowStatus=1" });
+    getList({ PageSize: 100, Filters: "" });
   }
 
   async function getListFiltered({
@@ -137,14 +137,14 @@ function Table() {
   };
 
   const refreshList = () => {
-    getList({ PageSize: 100, Filters: "?RowStatus=1" });
+    getList({ PageSize: 100, Filters: "" });
   };
 
   async function deleteRecords() {
     const ids = rowDataRef.current.map((item: any) => item?.id)
     try {
       await axiosInstance(_DELETE(ids));
-      getList({ PageSize: 100, Filters: "?RowStatus=1" });
+      getList({ PageSize: 100, Filters: "" });
     } catch (err: any) {
       const modal: any = document.getElementById(CNX_ID_DELETE);
       modal?.showModal();

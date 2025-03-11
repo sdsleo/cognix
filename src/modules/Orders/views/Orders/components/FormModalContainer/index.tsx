@@ -55,9 +55,12 @@ function FormModalContainer({ cnxId }: IFormModalContainer) {
   const [rowDataLocal, setRowDataLocal]: any = useState(null);
 
   const handleSetLocalRowData = () => {
+    setRowDataLocal(null)
     const data = sessionStorage.getItem(`${cnxId}cnx-order-row-data`);
     const dataJSON = data ? JSON.parse(data) : null;
-    setRowDataLocal(dataJSON)
+    setTimeout(() => {
+      setRowDataLocal(dataJSON)
+    }, 50);
   }
 
   const addProductIdRef: any = useRef({});

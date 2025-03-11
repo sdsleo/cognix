@@ -159,6 +159,174 @@ export const CnxTable: React.FC<ITable> = ({
 
     const values: any = handleAddId(data)
 
+    if (sort === 'orderNumber_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return b.orderNumber.localeCompare(a.orderNumber);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'orderNumber_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return a.orderNumber.localeCompare(b.orderNumber);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'destination_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return b.destination.localeCompare(a.destination);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'destination_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return a.destination.localeCompare(b.destination);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'origin_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return b.origin.localeCompare(a.origin);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'origin_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return a.origin.localeCompare(b.origin);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'maintenanceAditionalInfo_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        if (a.maintenanceAditionalInfo !== null && b.maintenanceAditionalInfo !== null) {
+          return b.maintenanceAditionalInfo.localeCompare(a.maintenanceAditionalInfo);
+        }
+        return b
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'maintenanceAditionalInfo_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        if (a.maintenanceAditionalInfo !== null && b.maintenanceAditionalInfo !== null) {
+          return a.maintenanceAditionalInfo.localeCompare(b.maintenanceAditionalInfo);
+        }
+        return a
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'maintenanceStatus_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return b.maintenanceStatus.localeCompare(a.maintenanceStatus);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'maintenanceStatus_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return a.maintenanceStatus.localeCompare(b.maintenanceStatus);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'cavalo_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return b.cavalo.localeCompare(a.cavalo);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'cavalo_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return a.cavalo.localeCompare(b.cavalo);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'status_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return b.status.localeCompare(a.status);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'status_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return a.status.localeCompare(b.status);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'location_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return b.location.localeCompare(a.location);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'location_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return a.location.localeCompare(b.location);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'vehiclePlate_desc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return b.vehiclePlate.localeCompare(a.vehiclePlate);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
+    if (sort === 'vehiclePlate_asc') {
+      let orderList = values?.sort((a: any, b: any) => {
+        return a.vehiclePlate.localeCompare(b.vehiclePlate);
+      })
+
+      setDataList(orderList);
+      return
+    }
+
     if (sort === 'strIsActived_desc') {
       let orderList = values?.sort((a: any, b: any) => {
         return b.strIsActived.localeCompare(a.strIsActived);

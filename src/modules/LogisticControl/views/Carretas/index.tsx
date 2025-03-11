@@ -10,6 +10,7 @@ import { IPagination } from "../../routes/types";
 import Input from "../../../../components/CnxInput/InputTypes/Input";
 import Select from "../../../../components/CnxInput/InputTypes/Select";
 import useFormatDate from "../../../../hooks/useFormatDate";
+import { SortLinesAscendingIcon, SortLinesIcon } from "@fluentui/react-icons-mdl2";
 
 function Carretas() {
   const { dispacth, loadingTable, carretaData, rowData, enumerators, enumeratorsOrder, page } =
@@ -26,6 +27,8 @@ function Carretas() {
   const editChildClientRef: any = useRef({});
   const editChildPlateRef: any = useRef({});
   const editChildDriverRef: any = useRef({});
+
+  const [sort, setSort] = useState('')
 
   // useEffect(() => {
   //   if (rowData?.id && page === "events") {
@@ -149,6 +152,189 @@ function Carretas() {
     itemCount: carretaData?.totalItems,
   };
 
+  const customThFunction = [
+    {
+      key: "vehiclePlate",
+      func: () => {
+        return (
+          <div
+            style={{ width: '150px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'vehiclePlate_desc' ? 'vehiclePlate_asc' : s === 'vehiclePlate_asc' ? '' : 'vehiclePlate_desc')  
+            }}>
+
+            {sort === 'vehiclePlate_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'vehiclePlate_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Placa Carreta
+          </div>
+        );
+      },
+    },
+    {
+      key: "location",
+      func: () => {
+        return (
+          <div
+            style={{ width: '150px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'location_desc' ? 'location_asc' : s === 'location_asc' ? '' : 'location_desc')  
+            }}>
+
+            {sort === 'location_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'location_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Localização
+          </div>
+        );
+      },
+    },
+    {
+      key: "status",
+      func: () => {
+        return (
+          <div
+            style={{ width: '150px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'status_desc' ? 'status_asc' : s === 'status_asc' ? '' : 'status_desc')  
+            }}>
+
+            {sort === 'status_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'status_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Status
+          </div>
+        );
+      },
+    },
+    {
+      key: "cavalo",
+      func: () => {
+        return (
+          <div
+            style={{ width: '150px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'cavalo_desc' ? 'cavalo_asc' : s === 'cavalo_asc' ? '' : 'cavalo_desc')  
+            }}>
+
+            {sort === 'cavalo_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'cavalo_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Placa Cavalo
+          </div>
+        );
+      },
+    },
+    {
+      key: "maintenanceStatus",
+      func: () => {
+        return (
+          <div
+            style={{ width: '200px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'maintenanceStatus_desc' ? 'maintenanceStatus_asc' : s === 'maintenanceStatus_asc' ? '' : 'maintenanceStatus_desc')  
+            }}>
+
+            {sort === 'maintenanceStatus_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'maintenanceStatus_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Manutenção Status
+          </div>
+        );
+      },
+    },
+    {
+      key: "maintenanceAditionalInfo",
+      func: () => {
+        return (
+          <div
+            style={{ width: '150px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'maintenanceAditionalInfo_desc' ? 'maintenanceAditionalInfo_asc' : s === 'maintenanceAditionalInfo_asc' ? '' : 'maintenanceAditionalInfo_desc')  
+            }}>
+
+            {sort === 'maintenanceAditionalInfo_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'maintenanceAditionalInfo_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Manutenção Nota
+          </div>
+        );
+      },
+    },
+    {
+      key: "origin",
+      func: () => {
+        return (
+          <div
+            style={{ width: '130px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'origin_desc' ? 'origin_asc' : s === 'origin_asc' ? '' : 'origin_desc')  
+            }}>
+
+            {sort === 'origin_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'origin_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Origem
+          </div>
+        );
+      },
+    },
+    {
+      key: "destination",
+      func: () => {
+        return (
+          <div
+            style={{ width: '130px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'destination_desc' ? 'destination_asc' : s === 'destination_asc' ? '' : 'destination_desc')  
+            }}>
+
+            {sort === 'destination_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'destination_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Destino
+          </div>
+        );
+      },
+    },
+    {
+      key: "orderNumber",
+      func: () => {
+        return (
+          <div
+            style={{ width: '130px'}} className="searchable"
+            onClick={() => {
+              setSort(s => s === 'orderNumber_desc' ? 'orderNumber_asc' : s === 'orderNumber_asc' ? '' : 'orderNumber_desc')  
+            }}>
+
+            {sort === 'orderNumber_desc' ? (
+              <SortLinesAscendingIcon style={{ marginRight: '5px' }} />
+            ) :  sort === 'orderNumber_asc' ? (
+              <SortLinesIcon style={{ marginRight: '5px' }} />
+            ) : <></>}
+            Nr Ordem
+          </div>
+        );
+      },
+    },
+  ];
+
   return (
     <div className="cnx-modules-main-container-cmmc">
       <CnxDialog
@@ -163,6 +349,7 @@ function Carretas() {
         title={`Carretas`}
         data={carretaData || []}
         head={head}
+        sort={sort}
         // buttons={buttons}
         isLoading={loadingTable}
         reOrderColumn
@@ -170,6 +357,7 @@ function Carretas() {
         // checkable
         hoverEffect
         enableSummary
+        customThFunction={customThFunction}
         // rowsChecked={handleRowsChecked}
         // actionButton={actionButton}
         // deleteButton={() => deleteButton()}
