@@ -69,12 +69,6 @@ function FormModalContainer({ cnxId }: IFormModalContainer) {
   const addDeliveryDateRef = useRef<HTMLInputElement>(null!);
   const [baseId, setBaseId]: any = useState();
   const [clientId, setClientId]: any = useState();
-  useEffect(() => {
-    dispacth({
-      type: ACTIONS.SET_OPERATION_PARAMS_DATA,
-      payload: null,
-    });
-  }, [baseId, clientId]);
 
   const addBaseIdRef: any = useRef({});
   const addClientIdRef: any = useRef({});
@@ -165,6 +159,13 @@ function FormModalContainer({ cnxId }: IFormModalContainer) {
   }
 
   useEffect(() => {
+    dispacth({
+      type: ACTIONS.SET_OPERATION_PARAMS_DATA,
+      payload: null,
+    });
+  }, [baseId, clientId]);
+
+  useEffect(() => {
     if (rowDataOperation?.orderProductionOperation?.operation?.number === 10) {
       getListTramos({ BaseId: rowDataLocal?.orderCustom?.baseId });
     }
@@ -186,16 +187,18 @@ function FormModalContainer({ cnxId }: IFormModalContainer) {
     editPlannedVolumeRef.current.value =
     rowDataLocal?.orderCustom?.volume.toFixed(2);
     getOrderById(rowDataLocal?.id);
-    if (rowDataLocal?.qtdOrderLinkParent !== 0) {
+    if (rowDataLocal && rowDataLocal?.qtdOrderLinkParent !== 0) {
+      console.log(rowDataLocal?.qtdOrderLinkParent)
       getOrderParentById(rowDataLocal?.id);
     }
-    if (rowDataLocal?.qtdOrderLinkParent == 0) {
+    if (rowDataLocal && rowDataLocal?.qtdOrderLinkParent == 0) {
       dispacth({
         type: ACTIONS.SET_PARENTS,
         payload: null,
       });
     }
   }, [rowDataLocal]);
+
   useEffect(() => {
     getEnumerators();
     if (rowDataOperation?.id) {
